@@ -38,7 +38,8 @@
   [33X[0;0Y© 2018 by the authors[133X
   
   [33X[0;0YThis  package  may  be distributed under the terms and conditions of the GNU
-  Public License Version 2 or higher.[133X
+  General  Public  License ([7Xhttp://www.fsf.org/licenses/gpl.html[107X) Version 2 or
+  higher.[133X
   
   
   -------------------------------------------------------

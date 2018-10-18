@@ -19,7 +19,7 @@
 
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap2.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapBib.html">[Next Chapter]</a>&nbsp;  </div>
 
-<p id="mathjaxlink" class="pcenter"></p>
+<p id="mathjaxlink" class="pcenter"><a href="chap3_mj.html">[MathJax on]</a></p>
 <p><a id="X7BA69E617DE465FE" name="X7BA69E617DE465FE"></a></p>
 <div class="ChapSects"><a href="chap3.html#X7BA69E617DE465FE">3 <span class="Heading">Networks of Threshold Elements</span></a>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap3.html#X82EB5BE77F9F686A">3.1 <span class="Heading">Basic Operations</span></a>
@@ -106,7 +106,7 @@ true
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OutputOfNeuralNetwork(nn);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(OutputOfNeuralNetwork(nn),Order);</span>
 [ 0, 1, 1, 0 ]
 
 </pre></div>
@@ -127,8 +127,7 @@ true
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+z;</span>
-x*y+z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+z;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nn:=BooleanFunctionByNeuralNetwork(f);</span>
 Enter the number of variables n (n&gt;=3):
 3
@@ -156,13 +155,12 @@ Sum of Products:[ 1, 3, 5, 6 ]
 <h5>3.2-2 BooleanFunctionByNeuralNetworkDASG</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; BooleanFunctionByNeuralNetworkDASG</code>( <var class="Arg">Func</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
-<p>For the Boolean function <code class="code">Func</code> the function <code class="code">BooleanFunctionByNeuralNetworkDASG</code> returns a two-layered neural network which realizes <code class="code">Func</code> (see <code class="func">NeuralNetwork</code> (<a href="chap3.html#X780C027786A8E34B"><span class="RefLink">3.1-1</span></a>)). The realization of this function is based on decomposition of <code class="code">Func</code> by the non-unate variables with the biggest influence. The DASG algorithm (DASG - Decomposition Algorithm for Synthesis and Generalization) was proposed in <a href="chapBib.html#biBSubirats2008">[LMF08]</a>, however we use a slightly modified version of this algorithm.</p>
+<p>For the Boolean function <code class="code">Func</code> the function <code class="code">BooleanFunctionByNeuralNetworkDASG</code> returns a two-layered neural network which realizes <code class="code">Func</code> (see <code class="func">NeuralNetwork</code> (<a href="chap3.html#X780C027786A8E34B"><span class="RefLink">3.1-1</span></a>)). The realization of this function is based on decomposition of <code class="code">Func</code> by the non-unate variables with the biggest influence. The DASG algorithm (DASG - Decomposition Algorithm for Synthesis and Generalization) was proposed in <a href="chapBib.html#biBSubirats2008">[SJF08]</a>, however we use a slightly modified version of this algorithm.</p>
 
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="00000110";</span>
-"00000110"
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="00000110";;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nn:=BooleanFunctionByNeuralNetworkDASG(f);;</span>
 &lt; neural network with
   2 threshold elements on inner layer and conjunction on outer level &gt;

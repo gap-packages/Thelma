@@ -19,7 +19,7 @@
 
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap1.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap3.html">[Next Chapter]</a>&nbsp;  </div>
 
-<p id="mathjaxlink" class="pcenter"></p>
+<p id="mathjaxlink" class="pcenter"><a href="chap2_mj.html">[MathJax on]</a></p>
 <p><a id="X83DFEF607CDA3594" name="X83DFEF607CDA3594"></a></p>
 <div class="ChapSects"><a href="chap2.html#X83DFEF607CDA3594">2 <span class="Heading">Threshold Elements</span></a>
 <div class="ContSect"><span class="tocline"><span class="nocss">&nbsp;</span><a href="chap2.html#X82EB5BE77F9F686A">2.1 <span class="Heading">Basic Operations</span></a>
@@ -158,7 +158,7 @@ false
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement([1,2],3);</span>
 &lt; threshold element with weight vector [ 1, 2 ] and threshold 3 &gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=OutputOfThresholdElement(te);</span>
-[ 0, 0, 0, 1 ]
+[ 0*Z(2), 0*Z(2), 0*Z(2), Z(2)^0 ]
 
 </pre></div>
 
@@ -268,20 +268,15 @@ b = \big(\;Y_1 \cdot G,\; \ldots, \; Y_n \cdot G, \; \textstyle \sum_{i=0}^{2^n-
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];</span>
-[ 0, 0, 0, 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c:=CharacteristicVectorOfFunction(f);</span>
 [ 2, 2, 2 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="0001";</span>
-"0001"
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="0001";;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c:=CharacteristicVectorOfFunction(f);</span>
 [ 2, 2, 2 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");</span>
-x
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");</span>
-y
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;</span>
-x+y
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c:=CharacteristicVectorOfFunction(f);</span>
 Enter the number of variables (n&gt;=2):
 2
@@ -299,16 +294,14 @@ Enter the number of variables (n&gt;=2):
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y;</span>
-x*y
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c:=CharacteristicVectorOfFunction(f);</span>
 Enter the number of variables (n&gt;=2):
 2
 [ 2, 2, 2 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsCharacteristicVectorOfSTE(c);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;</span>
-x+y
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c:=CharacteristicVectorOfFunction(f);</span>
 Enter the number of variables (n&gt;=2):
 2
@@ -340,8 +333,7 @@ f(x_{1},\ldots ,x_{i-1},0,x_{i+1},\ldots ,x_{n})\geq f(x_{1},\ldots ,x_{i-1},1,x
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),0*Z(2),0*Z(2),Z(2)^0,Z(2)^0,0*Z(2)];</span>
-[ 0, 0, 0, 0, 0, 1, 1, 0 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),0*Z(2),0*Z(2),Z(2)^0,Z(2)^0,0*Z(2)];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nn:=BooleanFunctionByNeuralNetwork(f);;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(nn);</span>
 Inner Layer:
@@ -359,12 +351,10 @@ Neural Network realizes the function f :
 Sum of Products:[ 5, 6 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsUnateInVariable(f,1);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="00000110";</span>
-"00000110"
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="00000110";;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsUnateInVariable(f,2);</span>
 false
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+x*z;</span>
-x*y+x*z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+x*z;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsUnateInVariable(f,3);</span>
 Enter the number of variables (n&gt;=3):
 3
@@ -379,23 +369,20 @@ false
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsUnateBooleanFunction</code>( <var class="Arg">Func</var> )</td><td class="tdright">(&nbsp;function&nbsp;)</td></tr></table></div>
 <p>If a Boolean function <span class="SimpleMath">f</span> is either positive or negative unate in each variable then it is said to be <var class="Arg">unate</var> (note that some <span class="SimpleMath">x_i</span> may be positive unate and some negative unate to satisfy the definition of unate function). A Boolean function <span class="SimpleMath">f</span> is <var class="Arg">binate</var> if it is not unate (i.e., is neither positive unate nor negative unate in at least one of its variables).</p>
 
-<p>All threshold functions are unate. However, the converse is not true, because there are certain unate functions, that can not be realized by STE <a href="chapBib.html#biBAvedillo1999">[JMR99]</a>.</p>
+<p>All threshold functions are unate. However, the converse is not true, because there are certain unate functions, that can not be realized by STE <a href="chapBib.html#biBAvedillo1999">[AQR99]</a>.</p>
 
 <p>For the Boolean function <code class="code">Func</code> the function <code class="code">IsUnateBooleanFunction</code> returns <code class="code">true</code> if <code class="code">Func</code> is unate and <code class="code">false</code> otherwise.</p>
 
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),Z(2)^0,Z(2)^0,Z(2)^0];</span>
-[ 0, 1, 1, 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),Z(2)^0,Z(2)^0,Z(2)^0];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsUnateBooleanFunction(f);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="1001";</span>
-"1001"
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="1001";;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsUnateBooleanFunction(f);</span>
 false
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;</span>
-x+y
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsUnateBooleanFunction(f);</span>
 Enter the number of variables (n&gt;=2):
 2
@@ -420,12 +407,10 @@ false
 2
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">InfluenceOfVariable(f,3);</span>
 2
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="00000110";</span>
-"00000110"
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="00000110";;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">InfluenceOfVariable(f,2);</span>
 2
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+x*z;</span>
-x*y+x*z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+x*z;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">InfluenceOfVariable(f,3);</span>
 Enter the number of variables (n&gt;=3):
 3
@@ -450,7 +435,7 @@ f^{n+1}(x_1,\ldots,x_n,x_{n+1})=1-f^{n}(\overline x_1,\ldots,\overline x_n) \qua
 
 <p>where <span class="SimpleMath">overline x_i = x_i ⊕ 1</span> is the negation of the <span class="SimpleMath">i</span>-th variable.</p>
 
-<p>Every threshold function is unate. However, in <a href="chapBib.html#biBFranco2006">[LLMJ06]</a> was shown that the unatness in the self-dual space of <span class="SimpleMath">n+1</span> variables is much stronger condition.</p>
+<p>Every threshold function is unate. However, in <a href="chapBib.html#biBFranco2006">[FSAJ06]</a> was shown that the unatness in the self-dual space of <span class="SimpleMath">n+1</span> variables is much stronger condition.</p>
 
 <p>For the Boolean function <code class="code">Func</code> the function <code class="code">SelfDualExtensionOfBooleanFunction</code> returns the truth vector of the self-dual extension of <code class="code">Func</code>.</p>
 
@@ -514,19 +499,17 @@ f_b(x_1,\ldots,x_n)=f(x_1,\ldots,x_{i-1},1,x_{i+1},\ldots,x_n) \quad \textrm{if}
 [ 0, 1, 1, 1 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(out[2],Order);</span>
 [ 1, 1, 1, 0 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="0110";</span>
-"0110"
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="0110";;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">out:=SplitBooleanFunction(f,1,true);;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(out[1],Order);</span>
 [ 0, 1, 0, 0 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(out[2],Order);</span>
 [ 0, 0, 1, 0 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;</span>
-x+y
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">out:=SplitBooleanFunction(f,1,true);</span>
 Enter the number of variables (n&gt;=2):
 2
-[ [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ] ]
+[ [ 0*Z(2), Z(2)^0, 0*Z(2), 0*Z(2) ], [ 0*Z(2), 0*Z(2), Z(2)^0, 0*Z(2) ] ]
 
 </pre></div>
 
@@ -554,22 +537,26 @@ K(f)=f^{-1}(0), \quad \textrm{otherwise,}
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];</span>
-[ 0, 0, 0, 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k:=KernelOfBooleanFunction(f);</span>
-[ [ [ 1, 1 ] ], 1 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="0111";</span>
-"0111"
+[ [ [ Z(2)^0, Z(2)^0 ] ], 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="0111";;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k:=KernelOfBooleanFunction(f);</span>
-[ [ [ 0, 0 ] ], 0 ]
+[ [ [ 0*Z(2), 0*Z(2) ] ], 0 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">z:=Indeterminate(GF(2),"z");</span>
 z
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+z;</span>
-x*y+z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+z;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k:=KernelOfBooleanFunction(f);</span>
 Enter the number of variables n (n&gt;=3):
 3
-[ [ [ 0, 0, 1 ], [ 0, 1, 1 ], [ 1, 0, 1 ], [ 1, 1, 0 ] ], 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k:=KernelOfBooleanFunction(f);</span>
+[ [ [ 0*Z(2), 0*Z(2), Z(2)^0 ], [ 0*Z(2), Z(2)^0, Z(2)^0 ],
+      [ Z(2)^0, 0*Z(2), Z(2)^0 ], [ Z(2)^0, Z(2)^0, 0*Z(2) ] ], 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(k[1]);</span>
+ . . 1
+ . 1 1
+ 1 . 1
+ 1 1 .
 
 </pre></div>
 
@@ -638,8 +625,7 @@ T(f)=\big\{ \;K(f)_i \;\mid\; i=1,2,\ldots,m  \;\big\}.
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+z;</span>
-x*y+z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+z;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k:=KernelOfBooleanFunction(f);;</span>
 Enter the number of variables n (n&gt;=3):
 3
@@ -675,8 +661,7 @@ true
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+z;</span>
-x*y+z
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+z;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsKernelContainingPrecedingVectors(f);</span>
 Enter the number of variables n (n&gt;=3):
 3
@@ -714,8 +699,7 @@ false
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;</span>
-x+y
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRKernelBiggerOfCombSum(f);</span>
 Enter the number of variables n (n&gt;=2):
 2
@@ -733,12 +717,10 @@ false
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];</span>
-[ 0, 0, 0, 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=BooleanFunctionBySTE(f);</span>
 &lt; threshold element with weight vector [ 1, 2 ] and threshold 3 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="11001000";</span>
-"11001000"
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="11001000";;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=BooleanFunctionBySTE(f);</span>
 &lt; threshold element with weight vector [ -1, -4, -2 ] and threshold -2 &gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(last);</span>
@@ -753,8 +735,7 @@ Threshold Element realizes the function f :
 [ 1, 1, 0 ] || 0
 [ 1, 1, 1 ] || 0
 Sum of Products:[ 0, 1, 4 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;</span>
-x+y
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x+y;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=BooleanFunctionBySTE(f);</span>
 Enter the number of variables n (n&gt;=2):
 2
@@ -809,15 +790,14 @@ a \in f^{-1}(0)\quad \Longrightarrow \quad a\cdot w^T &lt; T,
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];</span>
-[ 0, 0, 0, 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=RandomThresholdElement(2,-2,2);</span>
 &lt; threshold element with weight vector [ 0, -1 ] and threshold 0 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OutputOfThresholdElement(te1);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(OutputOfThresholdElement(te1),Order);</span>
 [ 1, 0, 1, 0 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElementTraining(te1,1,f,100);</span>
 &lt; threshold element with weight vector [ 2, 1 ] and threshold 3 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OutputOfThresholdElement(te2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(OutputOfThresholdElement(te2),Order);</span>
 [ 0, 0, 0, 1 ]
 
 </pre></div>
@@ -832,15 +812,14 @@ a \in f^{-1}(0)\quad \Longrightarrow \quad a\cdot w^T &lt; T,
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];</span>
-[ 0, 0, 0, 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=RandomThresholdElement(2,-2,2);</span>
 &lt; threshold element with weight vector [ 0, 2 ] and threshold 2 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OutputOfThresholdElement(te1);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(OutputOfThresholdElement(te1),Order);</span>
 [ 0, 1, 0, 1 ]
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElementBatchTraining(te1,1,f,100);</span>
 &lt; threshold element with weight vector [ 2, 2 ] and threshold 3 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OutputOfThresholdElement(te2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(OutputOfThresholdElement(te2));</span>
 [ 0, 0, 0, 1 ]
 
 </pre></div>
@@ -870,7 +849,7 @@ f(x_1,\ldots,x_n)=x_{i_1} \vee \cdots \vee x_{i_k}, \qquad (k \leq n)
 Enter the number of variables (n&gt;=2):
 2
 &lt; threshold element with weight vector [ 1, 1 ] and threshold 1 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OutputOfThresholdElement(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(OutputOfThresholdElement(te),Order);</span>
 [ 0, 1, 1, 1 ]
 
 </pre></div>
@@ -912,7 +891,7 @@ Enter the number of variables (n&gt;=2):
 Enter the number of variables (n&gt;=2):
 2
 &lt; threshold element with weight vector [ 1/2, 1/2 ] and threshold 1 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">OutputOfThresholdElement(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">List(OutputOfThresholdElement(te),Order);</span>
 [ 0, 0, 0, 1 ]
 
 </pre></div>

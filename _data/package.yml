@@ -1,6 +1,6 @@
 name: Thelma
 version: 1.00
-date: 2018-06-01
+date: 2018-10-18
 description: |
     A package on threshold elements
 
@@ -53,7 +53,7 @@ bibtex: |
       author =           {Bovdi, V. and Laver, V.},
       title =            {{Thelma},  A  package on threshold elements, {V}ersion
                           1.00},
-      month =            {Jun},
+      month =            {Oct},
       year =             {2018},
       note =             {GAP package},
       howpublished =     {\href                {https://vlaver.github.io/Thelma}

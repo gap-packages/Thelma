@@ -6,7 +6,7 @@
   threshold  elements  and  multilayered  perceptrons. Threshold elements were
   introduced  in  [MP43].  A  certain  number  of  articles on threshold logic
   appeared  in  60-s  and 70-s, however this field is regaining a considerable
-  interest nowadays as well (see [EBT16],[Hor94], [GVKB11], [NJSS16], e.t.c).[133X
+  interest nowadays as well (see [HST16],[Hor94], [GVKB11], [KYSV16], e.t.c).[133X
   
   [33X[0;0YWe  mostly  refer to the methods proposed in [ABGG80], [GPR83], [GMB17], and
   [Der65].[133X
@@ -56,6 +56,6 @@
   
   [1X1.3 [33X[0;0YFeedback[133X[101X
   
-  [33X[0;0YFor  bug  reports,  feature  requests  and  suggestions,  please write us an
-  e-mail.[133X
+  [33X[0;0YFor  bug  reports,  feature  requests and suggestions, please use the github
+  issue tracker at [7Xhttps://github.com/vlaver/Thelma/issues[107X.[133X
   

@@ -71,7 +71,7 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27XOutputOfNeuralNetwork(nn);[127X[104X
+    [4X[25Xgap>[125X [27XList(OutputOfNeuralNetwork(nn),Order);[127X[104X
     [4X[28X[ 0, 1, 1, 0 ][128X[104X
     [4X[28X[128X[104X
   [4X[32X[104X
@@ -92,8 +92,7 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x*y+z;[127X[104X
-    [4X[28Xx*y+z[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x*y+z;;[127X[104X
     [4X[25Xgap>[125X [27Xnn:=BooleanFunctionByNeuralNetwork(f);[127X[104X
     [4X[28XEnter the number of variables n (n>=3):[128X[104X
     [4X[28X3[128X[104X
@@ -125,13 +124,12 @@
   which  realizes  [10XFunc[110X  (see  [2XNeuralNetwork[102X ([14X3.1-1[114X)). The realization of this
   function  is  based on decomposition of [10XFunc[110X by the non-unate variables with
   the  biggest  influence.  The DASG algorithm (DASG - Decomposition Algorithm
-  for  Synthesis and Generalization) was proposed in [LMF08], however we use a
+  for  Synthesis and Generalization) was proposed in [SJF08], however we use a
   slightly modified version of this algorithm.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:="00000110";[127X[104X
-    [4X[28X"00000110"[128X[104X
+    [4X[25Xgap>[125X [27Xf:="00000110";;[127X[104X
     [4X[25Xgap>[125X [27Xnn:=BooleanFunctionByNeuralNetworkDASG(f);;[127X[104X
     [4X[28X< neural network with[128X[104X
     [4X[28X  2 threshold elements on inner layer and conjunction on outer level >[128X[104X

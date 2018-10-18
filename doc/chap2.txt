@@ -103,7 +103,7 @@
     [4X[25Xgap>[125X [27Xte:=ThresholdElement([1,2],3);[127X[104X
     [4X[28X< threshold element with weight vector [ 1, 2 ] and threshold 3 >[128X[104X
     [4X[25Xgap>[125X [27Xf:=OutputOfThresholdElement(te);[127X[104X
-    [4X[28X[ 0, 0, 0, 1 ][128X[104X
+    [4X[28X[ 0*Z(2), 0*Z(2), 0*Z(2), Z(2)^0 ][128X[104X
     [4X[28X[128X[104X
   [4X[32X[104X
   
@@ -235,20 +235,15 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];[127X[104X
-    [4X[28X[ 0, 0, 0, 1 ][128X[104X
+    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;[127X[104X
     [4X[25Xgap>[125X [27Xc:=CharacteristicVectorOfFunction(f);[127X[104X
     [4X[28X[ 2, 2, 2 ][128X[104X
-    [4X[25Xgap>[125X [27Xf:="0001";[127X[104X
-    [4X[28X"0001"[128X[104X
+    [4X[25Xgap>[125X [27Xf:="0001";;[127X[104X
     [4X[25Xgap>[125X [27Xc:=CharacteristicVectorOfFunction(f);[127X[104X
     [4X[28X[ 2, 2, 2 ][128X[104X
-    [4X[25Xgap>[125X [27Xx:=Indeterminate(GF(2),"x");[127X[104X
-    [4X[28Xx[128X[104X
-    [4X[25Xgap>[125X [27Xy:=Indeterminate(GF(2),"y");[127X[104X
-    [4X[28Xy[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x+y;[127X[104X
-    [4X[28Xx+y[128X[104X
+    [4X[25Xgap>[125X [27Xx:=Indeterminate(GF(2),"x");;[127X[104X
+    [4X[25Xgap>[125X [27Xy:=Indeterminate(GF(2),"y");;[127X[104X
+    [4X[25Xgap>[125X [27Xf:=x+y;;[127X[104X
     [4X[25Xgap>[125X [27Xc:=CharacteristicVectorOfFunction(f);[127X[104X
     [4X[28XEnter the number of variables (n>=2):[128X[104X
     [4X[28X2[128X[104X
@@ -268,16 +263,14 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x*y;[127X[104X
-    [4X[28Xx*y[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x*y;;[127X[104X
     [4X[25Xgap>[125X [27Xc:=CharacteristicVectorOfFunction(f);[127X[104X
     [4X[28XEnter the number of variables (n>=2):[128X[104X
     [4X[28X2[128X[104X
     [4X[28X[ 2, 2, 2 ][128X[104X
     [4X[25Xgap>[125X [27XIsCharacteristicVectorOfSTE(c);[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x+y;[127X[104X
-    [4X[28Xx+y[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x+y;;[127X[104X
     [4X[25Xgap>[125X [27Xc:=CharacteristicVectorOfFunction(f);[127X[104X
     [4X[28XEnter the number of variables (n>=2):[128X[104X
     [4X[28X2[128X[104X
@@ -315,8 +308,7 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),0*Z(2),0*Z(2),Z(2)^0,Z(2)^0,0*Z(2)];[127X[104X
-    [4X[28X[ 0, 0, 0, 0, 0, 1, 1, 0 ][128X[104X
+    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),0*Z(2),0*Z(2),Z(2)^0,Z(2)^0,0*Z(2)];;[127X[104X
     [4X[25Xgap>[125X [27Xnn:=BooleanFunctionByNeuralNetwork(f);;[127X[104X
     [4X[25Xgap>[125X [27XDisplay(nn);[127X[104X
     [4X[28XInner Layer:[128X[104X
@@ -334,12 +326,10 @@
     [4X[28XSum of Products:[ 5, 6 ][128X[104X
     [4X[25Xgap>[125X [27XIsUnateInVariable(f,1);[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xf:="00000110";[127X[104X
-    [4X[28X"00000110"[128X[104X
+    [4X[25Xgap>[125X [27Xf:="00000110";;[127X[104X
     [4X[25Xgap>[125X [27XIsUnateInVariable(f,2);[127X[104X
     [4X[28Xfalse[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x*y+x*z;[127X[104X
-    [4X[28Xx*y+x*z[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x*y+x*z;;[127X[104X
     [4X[25Xgap>[125X [27XIsUnateInVariable(f,3);[127X[104X
     [4X[28XEnter the number of variables (n>=3):[128X[104X
     [4X[28X3[128X[104X
@@ -359,23 +349,20 @@
   
   [33X[0;0YAll  threshold  functions  are  unate.  However,  the  converse is not true,
   because  there  are certain unate functions, that can not be realized by STE
-  [JMR99].[133X
+  [AQR99].[133X
   
   [33X[0;0YFor  the  Boolean  function [10XFunc[110X the function [10XIsUnateBooleanFunction[110X returns
   [10Xtrue[110X if [10XFunc[110X is unate and [10Xfalse[110X otherwise.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=[0*Z(2),Z(2)^0,Z(2)^0,Z(2)^0];[127X[104X
-    [4X[28X[ 0, 1, 1, 1 ][128X[104X
+    [4X[25Xgap>[125X [27Xf:=[0*Z(2),Z(2)^0,Z(2)^0,Z(2)^0];;[127X[104X
     [4X[25Xgap>[125X [27XIsUnateBooleanFunction(f);[127X[104X
     [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xf:="1001";[127X[104X
-    [4X[28X"1001"[128X[104X
+    [4X[25Xgap>[125X [27Xf:="1001";;[127X[104X
     [4X[25Xgap>[125X [27XIsUnateBooleanFunction(f);[127X[104X
     [4X[28Xfalse[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x+y;[127X[104X
-    [4X[28Xx+y[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x+y;;[127X[104X
     [4X[25Xgap>[125X [27XIsUnateBooleanFunction(f);[127X[104X
     [4X[28XEnter the number of variables (n>=2):[128X[104X
     [4X[28X2[128X[104X
@@ -403,12 +390,10 @@
     [4X[28X2[128X[104X
     [4X[25Xgap>[125X [27XInfluenceOfVariable(f,3);[127X[104X
     [4X[28X2[128X[104X
-    [4X[25Xgap>[125X [27Xf:="00000110";[127X[104X
-    [4X[28X"00000110"[128X[104X
+    [4X[25Xgap>[125X [27Xf:="00000110";;[127X[104X
     [4X[25Xgap>[125X [27XInfluenceOfVariable(f,2);[127X[104X
     [4X[28X2[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x*y+x*z;[127X[104X
-    [4X[28Xx*y+x*z[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x*y+x*z;;[127X[104X
     [4X[25Xgap>[125X [27XInfluenceOfVariable(f,3);[127X[104X
     [4X[28XEnter the number of variables (n>=3):[128X[104X
     [4X[28X3[128X[104X
@@ -438,7 +423,7 @@
   
   [33X[0;0Ywhere [22Xoverline x_i = x_i ⊕ 1[122X is the negation of the [22Xi[122X-th variable.[133X
   
-  [33X[0;0YEvery  threshold  function is unate. However, in [LLMJ06] was shown that the
+  [33X[0;0YEvery  threshold  function is unate. However, in [FSAJ06] was shown that the
   unatness in the self-dual space of [22Xn+1[122X variables is much stronger condition.[133X
   
   [33X[0;0YFor       the       Boolean       function       [10XFunc[110X      the      function
@@ -514,19 +499,17 @@
     [4X[28X[ 0, 1, 1, 1 ][128X[104X
     [4X[25Xgap>[125X [27XList(out[2],Order);[127X[104X
     [4X[28X[ 1, 1, 1, 0 ][128X[104X
-    [4X[25Xgap>[125X [27Xf:="0110";[127X[104X
-    [4X[28X"0110"[128X[104X
+    [4X[25Xgap>[125X [27Xf:="0110";;[127X[104X
     [4X[25Xgap>[125X [27Xout:=SplitBooleanFunction(f,1,true);;[127X[104X
     [4X[25Xgap>[125X [27XList(out[1],Order);[127X[104X
     [4X[28X[ 0, 1, 0, 0 ][128X[104X
     [4X[25Xgap>[125X [27XList(out[2],Order);[127X[104X
     [4X[28X[ 0, 0, 1, 0 ][128X[104X
-    [4X[25Xgap>[125X [27Xf:=x+y;[127X[104X
-    [4X[28Xx+y[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x+y;;[127X[104X
     [4X[25Xgap>[125X [27Xout:=SplitBooleanFunction(f,1,true);[127X[104X
     [4X[28XEnter the number of variables (n>=2):[128X[104X
     [4X[28X2[128X[104X
-    [4X[28X[ [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ] ][128X[104X
+    [4X[28X[ [ 0*Z(2), Z(2)^0, 0*Z(2), 0*Z(2) ], [ 0*Z(2), 0*Z(2), Z(2)^0, 0*Z(2) ] ][128X[104X
     [4X[28X[128X[104X
   [4X[32X[104X
   
@@ -557,22 +540,26 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];[127X[104X
-    [4X[28X[ 0, 0, 0, 1 ][128X[104X
+    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;[127X[104X
     [4X[25Xgap>[125X [27Xk:=KernelOfBooleanFunction(f);[127X[104X
-    [4X[28X[ [ [ 1, 1 ] ], 1 ][128X[104X
-    [4X[25Xgap>[125X [27Xf:="0111";[127X[104X
-    [4X[28X"0111"[128X[104X
+    [4X[28X[ [ [ Z(2)^0, Z(2)^0 ] ], 1 ][128X[104X
+    [4X[25Xgap>[125X [27Xf:="0111";;[127X[104X
     [4X[25Xgap>[125X [27Xk:=KernelOfBooleanFunction(f);[127X[104X
-    [4X[28X[ [ [ 0, 0 ] ], 0 ][128X[104X
+    [4X[28X[ [ [ 0*Z(2), 0*Z(2) ] ], 0 ][128X[104X
     [4X[25Xgap>[125X [27Xz:=Indeterminate(GF(2),"z");[127X[104X
     [4X[28Xz[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x*y+z;[127X[104X
-    [4X[28Xx*y+z[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x*y+z;;[127X[104X
     [4X[25Xgap>[125X [27Xk:=KernelOfBooleanFunction(f);[127X[104X
     [4X[28XEnter the number of variables n (n>=3):[128X[104X
     [4X[28X3[128X[104X
-    [4X[28X[ [ [ 0, 0, 1 ], [ 0, 1, 1 ], [ 1, 0, 1 ], [ 1, 1, 0 ] ], 1 ][128X[104X
+    [4X[25Xgap>[125X [27Xk:=KernelOfBooleanFunction(f);[127X[104X
+    [4X[28X[ [ [ 0*Z(2), 0*Z(2), Z(2)^0 ], [ 0*Z(2), Z(2)^0, Z(2)^0 ],[128X[104X
+    [4X[28X      [ Z(2)^0, 0*Z(2), Z(2)^0 ], [ Z(2)^0, Z(2)^0, 0*Z(2) ] ], 1 ][128X[104X
+    [4X[25Xgap>[125X [27XDisplay(k[1]);[127X[104X
+    [4X[28X . . 1[128X[104X
+    [4X[28X . 1 1[128X[104X
+    [4X[28X 1 . 1[128X[104X
+    [4X[28X 1 1 .[128X[104X
     [4X[28X[128X[104X
   [4X[32X[104X
   
@@ -649,8 +636,7 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x*y+z;[127X[104X
-    [4X[28Xx*y+z[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x*y+z;;[127X[104X
     [4X[25Xgap>[125X [27Xk:=KernelOfBooleanFunction(f);;[127X[104X
     [4X[28XEnter the number of variables n (n>=3):[128X[104X
     [4X[28X3[128X[104X
@@ -691,8 +677,7 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x*y+z;[127X[104X
-    [4X[28Xx*y+z[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x*y+z;;[127X[104X
     [4X[25Xgap>[125X [27XIsKernelContainingPrecedingVectors(f);[127X[104X
     [4X[28XEnter the number of variables n (n>=3):[128X[104X
     [4X[28X3[128X[104X
@@ -737,8 +722,7 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=x+y;[127X[104X
-    [4X[28Xx+y[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x+y;;[127X[104X
     [4X[25Xgap>[125X [27XIsRKernelBiggerOfCombSum(f);[127X[104X
     [4X[28XEnter the number of variables n (n>=2):[128X[104X
     [4X[28X2[128X[104X
@@ -759,12 +743,10 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];[127X[104X
-    [4X[28X[ 0, 0, 0, 1 ][128X[104X
+    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;[127X[104X
     [4X[25Xgap>[125X [27Xte:=BooleanFunctionBySTE(f);[127X[104X
     [4X[28X< threshold element with weight vector [ 1, 2 ] and threshold 3 >[128X[104X
-    [4X[25Xgap>[125X [27Xf:="11001000";[127X[104X
-    [4X[28X"11001000"[128X[104X
+    [4X[25Xgap>[125X [27Xf:="11001000";;[127X[104X
     [4X[25Xgap>[125X [27Xte:=BooleanFunctionBySTE(f);[127X[104X
     [4X[28X< threshold element with weight vector [ -1, -4, -2 ] and threshold -2 >[128X[104X
     [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
@@ -779,8 +761,7 @@
     [4X[28X[ 1, 1, 0 ] || 0[128X[104X
     [4X[28X[ 1, 1, 1 ] || 0[128X[104X
     [4X[28XSum of Products:[ 0, 1, 4 ][128X[104X
-    [4X[25Xgap>[125X [27Xf:=x+y;[127X[104X
-    [4X[28Xx+y[128X[104X
+    [4X[25Xgap>[125X [27Xf:=x+y;;[127X[104X
     [4X[25Xgap>[125X [27Xte:=BooleanFunctionBySTE(f);[127X[104X
     [4X[28XEnter the number of variables n (n>=2):[128X[104X
     [4X[28X2[128X[104X
@@ -847,15 +828,14 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];[127X[104X
-    [4X[28X[ 0, 0, 0, 1 ][128X[104X
+    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;[127X[104X
     [4X[25Xgap>[125X [27Xte1:=RandomThresholdElement(2,-2,2);[127X[104X
     [4X[28X< threshold element with weight vector [ 0, -1 ] and threshold 0 >[128X[104X
-    [4X[25Xgap>[125X [27XOutputOfThresholdElement(te1);[127X[104X
+    [4X[25Xgap>[125X [27XList(OutputOfThresholdElement(te1),Order);[127X[104X
     [4X[28X[ 1, 0, 1, 0 ][128X[104X
     [4X[25Xgap>[125X [27Xte2:=ThresholdElementTraining(te1,1,f,100);[127X[104X
     [4X[28X< threshold element with weight vector [ 2, 1 ] and threshold 3 >[128X[104X
-    [4X[25Xgap>[125X [27XOutputOfThresholdElement(te2);[127X[104X
+    [4X[25Xgap>[125X [27XList(OutputOfThresholdElement(te2),Order);[127X[104X
     [4X[28X[ 0, 0, 0, 1 ][128X[104X
     [4X[28X[128X[104X
   [4X[32X[104X
@@ -874,15 +854,14 @@
   
   [4X[32X  Example  [32X[104X
     [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];[127X[104X
-    [4X[28X[ 0, 0, 0, 1 ][128X[104X
+    [4X[25Xgap>[125X [27Xf:=[0*Z(2),0*Z(2),0*Z(2),Z(2)^0];;[127X[104X
     [4X[25Xgap>[125X [27Xte1:=RandomThresholdElement(2,-2,2);[127X[104X
     [4X[28X< threshold element with weight vector [ 0, 2 ] and threshold 2 >[128X[104X
-    [4X[25Xgap>[125X [27XOutputOfThresholdElement(te1);[127X[104X
+    [4X[25Xgap>[125X [27XList(OutputOfThresholdElement(te1),Order);[127X[104X
     [4X[28X[ 0, 1, 0, 1 ][128X[104X
     [4X[25Xgap>[125X [27Xte2:=ThresholdElementBatchTraining(te1,1,f,100);[127X[104X
     [4X[28X< threshold element with weight vector [ 2, 2 ] and threshold 3 >[128X[104X
-    [4X[25Xgap>[125X [27XOutputOfThresholdElement(te2);[127X[104X
+    [4X[25Xgap>[125X [27XList(OutputOfThresholdElement(te2));[127X[104X
     [4X[28X[ 0, 0, 0, 1 ][128X[104X
     [4X[28X[128X[104X
   [4X[32X[104X
@@ -920,7 +899,7 @@
     [4X[28XEnter the number of variables (n>=2):[128X[104X
     [4X[28X2[128X[104X
     [4X[28X< threshold element with weight vector [ 1, 1 ] and threshold 1 >[128X[104X
-    [4X[25Xgap>[125X [27XOutputOfThresholdElement(te);[127X[104X
+    [4X[25Xgap>[125X [27XList(OutputOfThresholdElement(te),Order);[127X[104X
     [4X[28X[ 0, 1, 1, 1 ][128X[104X
     [4X[28X[128X[104X
   [4X[32X[104X
@@ -973,7 +952,7 @@
     [4X[28XEnter the number of variables (n>=2):[128X[104X
     [4X[28X2[128X[104X
     [4X[28X< threshold element with weight vector [ 1/2, 1/2 ] and threshold 1 >[128X[104X
-    [4X[25Xgap>[125X [27XOutputOfThresholdElement(te);[127X[104X
+    [4X[25Xgap>[125X [27XList(OutputOfThresholdElement(te),Order);[127X[104X
     [4X[28X[ 0, 0, 0, 1 ][128X[104X
     [4X[28X[128X[104X
   [4X[32X[104X
