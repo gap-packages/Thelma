@@ -6,7 +6,7 @@
                 [1X THreshold ELements, Modeling and Applications [101X
   
   
-                                     1.0.0
+                                     1.0.1
   
   
                                       2018

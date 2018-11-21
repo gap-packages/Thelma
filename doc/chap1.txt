@@ -23,32 +23,10 @@
   
   [1X1.2 [33X[0;0YInstallation[133X[101X
   
-  [33X[0;0YTo  get the newest version of this [5XGAP[105X 4 package download one of the archive
-  files[133X
-  
-  [30X    [33X[0;6Y[11Xthelma-x.x.tar.gz[111X[133X
-  
-  [30X    [33X[0;6Y[11Xthelma-x.x.tar.bz2[111X[133X
-  
-  [30X    [33X[0;6Y[11Xthelma-x.x.zip[111X[133X
-  
-  [33X[0;0Yand unpack it using[133X
-  
-  gunzip thelma-x.x.tar.gz; tar xvf thelma-x.x.tar
-  
-  [33X[0;0Yor[133X
-  
-  bzip2 -d thelma-x.x.tar.bz2; tar xvf thelma-x.x.tar
-  
-  [33X[0;0Yor[133X
-  
-  unzip -x thelma-x.x.zip
-  
-  [33X[0;0Yrespectively.[133X
-  
-  [33X[0;0YDo  this  in a directory called [21X[11Xpkg[111X[121X, preferably (but not necessarily) in the
-  [21X[11Xpkg[111X[121X  subdirectory  of  your  [5XGAP[105X  4  installation. It creates a subdirectory
-  called [21X[11Xthelma[111X[121X.[133X
+  [33X[0;0YTo  get  the  newest version of this [5XGAP[105X 4 package download the archive file
+  [11Xthelma-x.x.tar.gz[111X  and  unpack it in a directory called [21X[11Xpkg[111X[121X, preferably (but
+  not  necessarily)  in  the  [21X[11Xpkg[111X[121X  subdirectory of your [5XGAP[105X 4 installation. It
+  creates a subdirectory called [21X[11Xthelma[111X[121X.[133X
   
   [33X[0;0YAs  [5XThelma[105X has no additional C libraries, there is no need in any additional
   installation steps.[133X
@@ -57,5 +35,5 @@
   [1X1.3 [33X[0;0YFeedback[133X[101X
   
   [33X[0;0YFor  bug  reports,  feature  requests and suggestions, please use the github
-  issue tracker at [7Xhttps://github.com/vlaver/Thelma/issues[107X.[133X
+  issue tracker at [7Xhttps://github.com/gap-packages/Thelma/issues[107X.[133X
   
