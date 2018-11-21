@@ -1,6 +1,6 @@
 name: Thelma
-version: 1.00
-date: 2018-10-18
+version: 1.01
+date: 2018-11-21
 description: |
     A package on threshold elements
 
@@ -21,13 +21,13 @@ needed-pkgs:
       version: "1.5"
       url: "http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc"
 
-www: https://vlaver.github.io/Thelma
+www: https://gap-packages.github.io/Thelma
 readme: README.md
-packageinfo: https://vlaver.github.io/Thelma/PackageInfo.g
+packageinfo: https://gap-packages.github.io/Thelma/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/vlaver/Thelma/releases/download/v1.00/Thelma-1.00.tar.gz
+      url: https://github.com/gap-packages/Thelma/releases/download/v1.01/Thelma-1.01.tar.gz
 
 abstract: |
     The <span class="pkgname">Thelma</span> package is package with algorithms to deal with threshold elements.
@@ -41,23 +41,23 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BL18</span>]   <b class='BibAuthor'>Bovdi, V. and Laver, V.</b>,
      <i class='BibTitle'>Thelma, A package on threshold elements,
-             Version 1.00</i>
+             Version 1.01</i>
      (<span class='BibYear'>2018</span>)<br />
     (<span class='BibNote'>GAP package</span>),
-    <span class='BibHowpublished'><a href="https://vlaver.github.io/Thelma">https://vlaver.github.io/Thelma</a></span>.
+    <span class='BibHowpublished'><a href="https://gap-packages.github.io/Thelma">https://gap-packages.github.io/Thelma</a></span>.
     </p>
     
 
 bibtex: |
-    @misc{ Thelma1.00,
+    @misc{ Thelma1.01,
       author =           {Bovdi, V. and Laver, V.},
       title =            {{Thelma},  A  package on threshold elements, {V}ersion
-                          1.00},
-      month =            {Oct},
+                          1.01},
+      month =            {Nov},
       year =             {2018},
       note =             {GAP package},
-      howpublished =     {\href                {https://vlaver.github.io/Thelma}
-                          {\texttt{https://vlaver.github.io/}\discretionary
+      howpublished =     {\href          {https://gap-packages.github.io/Thelma}
+                          {\texttt{https://gap-packages.github.io/}\discretionary
                           {}{}{}\texttt{Thelma}}},
       keywords =         {threshold elements; neural networks; threshold logic},
       printedkey =       {BL18}
