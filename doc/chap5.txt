@@ -1,0 +1,208 @@
+  
+  [1X5 [33X[0;0YMulti-Valued Threshold Elements[133X[101X
+  
+  
+  [1X5.1 [33X[0;0YThreshold Elements over [22XGF(p^k)[122X[101X[1X[133X[101X
+  
+  [33X[0;0YLet  [22XF=GF(p^k)[122X be a Galois field with primitive element [22Xε[122X and let [22XF^*[122X be the
+  multiplicative group of [22XF[122X. Let us consider all proper subgroups of [22XF^*[122X:[133X
+  
+  
+  [24X[33X[0;6YC_{j_1}=  \langle  \sigma_1 \mid \sigma_1^{j_1}=1 \rangle, \ldots , C_{j_t}=
+  \langle \sigma_t \mid \sigma_n^{j_t}=1 \rangle,[133X
+  
+  [124X
+  
+  [33X[0;0Ywhere [22Xσ_i=ϵ^frac|F^*|j_i}[122X ([22Xi=1,...,t[122X)are the generators of the corresponding
+  cyclic  groups. Denote [22XT={ j_1, ..., j_t}[122X. Let [22XG_n = C_k_1⊗ ... ⊗ C_k_n[122X be a
+  direct product of cyclic groups [22XC_k_i[122X ([22Xk_i ∈ T[122X,[22Xi=1,...,n[122X).[133X
+  
+  [33X[0;0YA  [3Xdiscrete function[103X of [22Xn[122X variables over a finite field [22XF[122X is a mapping [22Xf:G_n
+  -> C_q[122X, [22Xq ∈ T[122X, [22XC_q = ⟨ σ ∣ σ^q=1 ⟩[122X, [22Xσ = ϵ^frac|F^*|q}[122X.[133X
+  
+  [33X[0;0YWe define the function [22XFSignξ[122X in the following way [Gec10]:[133X
+  
+  
+  [24X[33X[0;6Y\forall  \xi  \in  F^*  :  FSign  \xi  =  \sigma^j,  \;\;  \textrm{if}  \;\;
+  \frac{j|F^*|}{q}\leq \textrm{deg}\xi < \frac{(j+1)|F^*|}{q},[133X
+  
+  [124X
+  
+  [33X[0;0Yin  which  [22Xdeg ξ[122X is obtained from the equality [22Xξ=ϵ^deg ξ[122X, [22Xj ∈ { 1, ... , q-1
+  }[122X.[133X
+  
+  [33X[0;0YLet  [22X(w_1,  ...,  w_n;  T)  ∈ F^n+1[122X. For all [22Xoverlineg = (x_1,...,x_n) ∈ G_n[122X
+  (i.e. [22Xx_j ∈ C_k_j[122X) we define[133X
+  
+  
+  [24X[33X[0;6Yw(\overline{g}) = \sum_{i=1}^n w_i x_i + T \in F.[133X
+  
+  [124X
+  
+  [33X[0;0YA [3Xneural element[103X with structure vector [22X(w_1, ..., w_n; T) ∈ F^n+1[122X is a logic
+  device  that  realizes the function [22XFSign (w(overlineg))[122X for all [22Xoverlineg ∈
+  G_n[122X.[133X
+  
+  [33X[0;0YDiscrete  function  [22Xf[122X which is relizable by a single neural element over the
+  field [22XF[122X is called [3Xneurofunction[103X.[133X
+  
+  [1X5.1-1 MVThresholdElement[101X
+  
+  [33X[1;0Y[29X[2XMVThresholdElement[102X( [3XStructure[103X, [3XDimensions[103X, [3XField[103X ) [32X function[133X
+  
+  [33X[0;0YFor  the  two-element list [10XStructure[110X, in which the first element is a vector
+  over  the  field [10XField[110X, and the second element is an element of the [10XField[110X, a
+  list  of  positive integers [10XDimensions[110X (or an integerm if all the dimensions
+  are  equal) and a Galois field [10XField[110X the function [10XMVThresholdElement[110X returns
+  a  multi-valued  threshold  element  with  the number of inputs equal to the
+  length of the first element of [10XStructure[110X list.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27XF:=GF(13);;[127X[104X
+    [4X[25Xgap>[125X [27Xst:=[[Z(13)^5,Z(13)^7],Z(13)^4];;[127X[104X
+    [4X[25Xgap>[125X [27Xdim:=[2,3,3];;[127X[104X
+    [4X[25Xgap>[125X [27Xmvte:=MVThresholdElement(st,dim,F);[127X[104X
+    [4X[28X< multivalued threshold element over GF(13) with structure [[ 6, 11 ], 3] and[128X[104X
+    [4X[28X  dimension vector [ 2, 3, 3 ] >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(mvte);[127X[104X
+    [4X[28XStructure vector = [[ 6, 11 ], 3][128X[104X
+    [4X[28XDimension vector = [[ 2, 3, 3 ]][128X[104X
+    [4X[28XField: GF(13)[128X[104X
+    [4X[28XMulti-Valued Threshold Element realizes the function f :[128X[104X
+    [4X[28X[ 1, 1 ]  ||  9[128X[104X
+    [4X[28X[ 1, 3 ]  ||  3[128X[104X
+    [4X[28X[ 1, 9 ]  ||  1[128X[104X
+    [4X[28X[ 12, 1 ]  ||  1[128X[104X
+    [4X[28X[ 12, 3 ]  ||  1[128X[104X
+    [4X[28X[ 12, 9 ]  ||  9[128X[104X
+    [4X[25Xgap>[125X [27X## If all dimensions in dimension vector are equal, the user can enter[127X[104X
+    [4X[28Xjust this number.[128X[104X
+    [4X[25Xgap>[125X [27XF:=GF(5);;[127X[104X
+    [4X[25Xgap>[125X [27Xst:=[[Z(5)^0,Z(5)^0],Z(5)^2];;[127X[104X
+    [4X[25Xgap>[125X [27Xdim:=2;;[127X[104X
+    [4X[25Xgap>[125X [27Xmvte:=MVThresholdElement(st,dim,F);[127X[104X
+    [4X[28X< multivalued threshold element over GF(5) with structure [[ 1, 1 ], 4] and[128X[104X
+    [4X[28X  dimension vector [ 2, 2, 2 ] >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(mvte);[127X[104X
+    [4X[28XStructure vector = [[ 1, 1 ], 4][128X[104X
+    [4X[28XDimension vector = [[ 2, 2, 2 ]][128X[104X
+    [4X[28XField: GF(5)[128X[104X
+    [4X[28XMulti-Valued Threshold Element realizes the function f :[128X[104X
+    [4X[28X[ 1, 1 ]  ||  1[128X[104X
+    [4X[28X[ 1, 4 ]  ||  4[128X[104X
+    [4X[28X[ 4, 1 ]  ||  4[128X[104X
+    [4X[28X[ 4, 4 ]  ||  1[128X[104X
+    [4X[28X[128X[104X
+  [4X[32X[104X
+  
+  [33X[0;0YThe  function  [10XDisplay[110X  outputs  the stucture of the given threshold element
+  [10Xmvte[110X  and  the  truth  table in given alphabet. In the previous example [10Xmvte[110X
+  realizes a three-valued function in [22X{ 1, 3, 9 }[122X alphabet over GF(13).[133X
+  
+  [1X5.1-2 IsMVThresholdElement[101X
+  
+  [33X[1;0Y[29X[2XIsMVThresholdElement[102X( [3XObj[103X ) [32X function[133X
+  
+  [33X[0;0YFor  the object [10XObj[110X the function [10XIsMVThresholdElement[110X returns [10Xtrue[110X if [10XObj[110X is
+  a multi-valued threshold element (see [2XMVThresholdElement[102X ([14X5.1-1[114X)), and [10Xfalse[110X
+  otherwise.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27XIsMVThresholdElement(mvte);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[28X[128X[104X
+  [4X[32X[104X
+  
+  [1X5.1-3 OutputOfMVThresholdElement[101X
+  
+  [33X[1;0Y[29X[2XOutputOfMVThresholdElement[102X( [3XMVThrEl[103X ) [32X function[133X
+  
+  [33X[0;0YFor    the    multi-valued    threshold   element   [10XMVThrEl[110X   the   function
+  [10XOutputOfMVThresholdElement[110X  returns  the  truth  vector  of the multi-valued
+  Boolean function, realized by [10XMVThrEl[110X.[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27XF:=GF(13);;[127X[104X
+    [4X[25Xgap>[125X [27Xst:=[[Z(13)^5,Z(13)^7],Z(13)^4];;[127X[104X
+    [4X[25Xgap>[125X [27Xdim:=[2,3,3];;[127X[104X
+    [4X[25Xgap>[125X [27Xmvte:=MVThresholdElement(st,dim,F);[127X[104X
+    [4X[28X< multivalued threshold element over GF(13) with structure [[ 6, 11 ], 3] and[128X[104X
+    [4X[28X  dimension vector [ 2, 3, 3 ] >[128X[104X
+    [4X[25Xgap>[125X [27Xf:=OutputOfMVThresholdElement(mvte);[127X[104X
+    [4X[28X< logic function of 2 variables and dimension vector [ 2, 3, 3 ]>[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
+    [4X[28X[ 0, 0 ] || 2[128X[104X
+    [4X[28X[ 0, 1 ] || 1[128X[104X
+    [4X[28X[ 0, 2 ] || 0[128X[104X
+    [4X[28X[ 1, 0 ] || 0[128X[104X
+    [4X[28X[ 1, 1 ] || 0[128X[104X
+    [4X[28X[ 1, 2 ] || 2[128X[104X
+    [4X[28X[128X[104X
+  [4X[32X[104X
+  
+  [1X5.1-4 StructureOfMVThresholdElement[101X
+  
+  [33X[1;0Y[29X[2XStructureOfMVThresholdElement[102X( [3XMVThrEl[103X ) [32X function[133X
+  
+  [33X[0;0YFor    the    multi-valued    threshold   element   [10XMVThrEl[110X   the   function
+  [10XStructureOfMVThresholdElement[110X  returns  the structure vector of [10XMVThrEl[110X (see
+  [2XMVThresholdElement[102X ([14X5.1-1[114X)).[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27XStructureOfMVThresholdElement(mvte);[127X[104X
+    [4X[28X[ [ Z(13)^5, Z(13)^7 ], Z(13)^4 ][128X[104X
+    [4X[28X[128X[104X
+  [4X[32X[104X
+  
+  [1X5.1-5 MVBooleanFunctionBySTE[101X
+  
+  [33X[1;0Y[29X[2XMVBooleanFunctionBySTE[102X( [3XFunc[103X, [3XDim[103X, [3XF[103X ) [32X function[133X
+  
+  [33X[0;0YFor  the given multi-valued function [10XFunc[110X and the prime field [10XF[110X the function
+  [10XMVBooleanFunctionBySTE[110X  returns the multi-valued threshold element over [10XF[110X if
+  [10XFunc[110X is realizable and an empty list otherwise. The algorithm realizing this
+  function was proposed in [Gec10].[133X
+  
+  [4X[32X  Example  [32X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,1,1,0]);[127X[104X
+    [4X[28X< Boolean function of 2 variables >[128X[104X
+    [4X[25Xgap>[125X [27Xmvte:=MVBooleanFunctionBySTE(f,GF(3));[127X[104X
+    [4X[28X[  ][128X[104X
+    [4X[25Xgap>[125X [27Xmvte:=MVBooleanFunctionBySTE(f,GF(5));[127X[104X
+    [4X[28X< multivalued threshold element over GF(5) with structure [[ 1, 1 ], 4] and[128X[104X
+    [4X[28X  dimension vector [ 2, 2, 2 ] >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
+    [4X[28XStructure vector = [[ 1, 1 ], 4][128X[104X
+    [4X[28XDimension vector = [[ 2, 2, 2 ]][128X[104X
+    [4X[28XField: GF(5)[128X[104X
+    [4X[28XMulti-Valued Threshold Element realizes the function f :[128X[104X
+    [4X[28X[ 1, 1 ]  ||  1[128X[104X
+    [4X[28X[ 1, 4 ]  ||  4[128X[104X
+    [4X[28X[ 4, 1 ]  ||  4[128X[104X
+    [4X[28X[ 4, 4 ]  ||  1[128X[104X
+    [4X[25Xgap>[125X [27X## Consider an example if dimensions are presented as a list.[127X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,[2,3,3],[0,0,1,1,2,2]);[127X[104X
+    [4X[28X< logic function of 2 variables and dimension vector [ 2, 3, 3 ]>[128X[104X
+    [4X[25Xgap>[125X [27Xmvte:=MVBooleanFunctionBySTE(f,GF(13));[127X[104X
+    [4X[28X< multivalued threshold element over GF(13) with structure [[ 12, 10 ], 5][128X[104X
+    [4X[28X  and dimension vector [ 2, 3, 3 ] >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
+    [4X[28XStructure vector = [[ 12, 10 ], 5][128X[104X
+    [4X[28XDimension vector = [[ 2, 3, 3 ]][128X[104X
+    [4X[28XField: GF(13)[128X[104X
+    [4X[28XMulti-Valued Threshold Element realizes the function f :[128X[104X
+    [4X[28X[ 1, 1 ]  ||  1[128X[104X
+    [4X[28X[ 1, 3 ]  ||  1[128X[104X
+    [4X[28X[ 1, 9 ]  ||  3[128X[104X
+    [4X[28X[ 12, 1 ]  ||  3[128X[104X
+    [4X[28X[ 12, 3 ]  ||  9[128X[104X
+    [4X[28X[ 12, 9 ]  ||  9[128X[104X
+    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+  [4X[32X[104X
+  

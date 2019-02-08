@@ -14,10 +14,10 @@
   
   [1X1.1 [33X[0;0YOverview over this manual[133X[101X
   
-  [33X[0;0YChapter  [14X2[114X  describes  the  functions operating with the threshold elements.
+  [33X[0;0YChapter  [14X3[114X  describes  the  functions operating with the threshold elements.
   They   include   the   basic  operations,  the  functions  that  verify  the
   realizability of a given Boolean function by a single threshold element, and
-  some  iterative  methods.  Chapter  [14X3[114X  describes  the  functions  for neural
+  some  iterative  methods.  Chapter  [14X4[114X  describes  the  functions  for neural
   networks, built from the threshold elements.[133X
   
   

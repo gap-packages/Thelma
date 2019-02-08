@@ -6,7 +6,7 @@
                 [1X THreshold ELements, Modeling and Applications [101X
   
   
-                                     1.0.1
+                                     1.0.2
   
   
                                       2018
@@ -38,8 +38,7 @@
   [33X[0;0Y© 2018 by the authors[133X
   
   [33X[0;0YThis  package  may  be distributed under the terms and conditions of the GNU
-  General  Public  License ([7Xhttp://www.fsf.org/licenses/gpl.html[107X) Version 2 or
-  higher.[133X
+  Public License Version 2 or higher.[133X
   
   
   -------------------------------------------------------
@@ -51,43 +50,55 @@
     1.1 [33X[0;0YOverview over this manual[133X
     1.2 [33X[0;0YInstallation[133X
     1.3 [33X[0;0YFeedback[133X
-  2 [33X[0;0YThreshold Elements[133X
+  2 [33X[0;0YBoolean Functions[133X
     2.1 [33X[0;0YBasic Operations[133X
-      2.1-1 ThresholdElement
-      2.1-2 IsThresholdElement
-      2.1-3 OutputOfThresholdElement
-      2.1-4 StructureOfThresholdElement
-      2.1-5 RandomThresholdElement
-      2.1-6 Comparison of Threshold Elements
-    2.2 [33X[0;0YSingle Threshold Element Realizability[133X
-      2.2-1 CharacteristicVectorOfFunction
-      2.2-2 IsCharacteristicVectorOfSTE
-      2.2-3 IsUnateInVariable
-      2.2-4 IsUnateBooleanFunction
-      2.2-5 InfluenceOfVariable
-      2.2-6 SelfDualExtensionOfBooleanFunction
-      2.2-7 SplitBooleanFunction
-      2.2-8 KernelOfBooleanFunction
-      2.2-9 ReducedKernelOfBooleanFunction
-      2.2-10 IsInverseInKernel
-      2.2-11 IsKernelContainingPrecedingVectors
-      2.2-12 IsRKernelBiggerOfCombSum
-      2.2-13 BooleanFunctionBySTE
-      2.2-14 PDBooleanFunctionBySTE
-    2.3 [33X[0;0YIterative Training Methods[133X
-      2.3-1 ThresholdElementTraining
-      2.3-2 ThresholdElementBatchTraining
-      2.3-3 WinnowAlgorithm
-      2.3-4 Winnow2Algorithm
-      2.3-5 STESynthesis
-  3 [33X[0;0YNetworks of Threshold Elements[133X
+      2.1-1 LogicFunction
+      2.1-2 IsLogicFunction
+      2.1-3 PolynomialToBooleanFunction
+      2.1-4 IsUnateInVariable
+      2.1-5 IsUnateBooleanFunction
+      2.1-6 InfluenceOfVariable
+      2.1-7 SelfDualExtensionOfBooleanFunction
+      2.1-8 SplitBooleanFunction
+      2.1-9 KernelOfBooleanFunction
+      2.1-10 ReducedKernelOfBooleanFunction
+  3 [33X[0;0YThreshold Elements[133X
     3.1 [33X[0;0YBasic Operations[133X
-      3.1-1 NeuralNetwork
-      3.1-2 IsNeuralNetwork
-      3.1-3 OutputOfNeuralNetwork
-    3.2 [33X[0;0YNetworks of Threshold Elements[133X
-      3.2-1 BooleanFunctionByNeuralNetwork
-      3.2-2 BooleanFunctionByNeuralNetworkDASG
+      3.1-1 ThresholdElement
+      3.1-2 IsThresholdElement
+      3.1-3 OutputOfThresholdElement
+      3.1-4 StructureOfThresholdElement
+      3.1-5 RandomThresholdElement
+      3.1-6 Comparison of Threshold Elements
+    3.2 [33X[0;0YSingle Threshold Element Realizability[133X
+      3.2-1 CharacteristicVectorOfFunction
+      3.2-2 IsCharacteristicVectorOfSTE
+      3.2-3 IsInverseInKernel
+      3.2-4 IsKernelContainingPrecedingVectors
+      3.2-5 IsRKernelBiggerOfCombSum
+      3.2-6 BooleanFunctionBySTE
+      3.2-7 PDBooleanFunctionBySTE
+    3.3 [33X[0;0YIterative Training Methods[133X
+      3.3-1 ThresholdElementTraining
+      3.3-2 ThresholdElementBatchTraining
+      3.3-3 WinnowAlgorithm
+      3.3-4 Winnow2Algorithm
+      3.3-5 STESynthesis
+  4 [33X[0;0YNetworks of Threshold Elements[133X
+    4.1 [33X[0;0YBasic Operations[133X
+      4.1-1 NeuralNetwork
+      4.1-2 IsNeuralNetwork
+      4.1-3 OutputOfNeuralNetwork
+    4.2 [33X[0;0YNetworks of Threshold Elements[133X
+      4.2-1 BooleanFunctionByNeuralNetwork
+      4.2-2 BooleanFunctionByNeuralNetworkDASG
+  5 [33X[0;0YMulti-Valued Threshold Elements[133X
+    5.1 [33X[0;0YThreshold Elements over [22XGF(p^k)[122X[133X
+      5.1-1 MVThresholdElement
+      5.1-2 IsMVThresholdElement
+      5.1-3 OutputOfMVThresholdElement
+      5.1-4 StructureOfMVThresholdElement
+      5.1-5 MVBooleanFunctionBySTE
   
   
   [32X
