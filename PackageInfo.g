@@ -7,9 +7,11 @@
 
 SetPackageInfo( rec(
 PackageName := "Thelma",
-Subtitle := "A package on threshold elements",
-Version := "1.02",
-Date := "06/02/2019",
+Subtitle := "THreshold ELements, Modeling and Applications",
+Version := "1.3",
+Date := "03/03/2022",
+License := "GPL-2.0-or-later",
+
 PackageWWWHome := Concatenation( "https://gap-packages.github.io/", ~.PackageName ),
     SourceRepository := rec(
     Type := "git",
@@ -28,6 +30,10 @@ Persons := [
     IsAuthor      := true,
     IsMaintainer  := false,
     Email         := "vbovdi@gmail.com",
+    PostalAddress := """
+        Department of Mathematical Sciences
+        UAEU
+        Al Ain, United Arab Emirates""",
    	Place         := "Al Ain",
     Institution   := "UAE University"
   ),
@@ -37,12 +43,16 @@ Persons := [
     IsAuthor      := true,
     IsMaintainer  := true,
     Email         := "vasyl.laver@uzhnu.edu.ua",
+    PostalAddress := """
+        Department of Mathematical Sciences
+        UAEU
+        Al Ain, United Arab Emirates""",
   	Place         := "Al Ain",
     Institution   := "UAE University"
   ),
 ],
 
-Status := "dev",
+Status := "deposited",
 
 ##  You must provide the next two entries if and only if the status is
 ##  "accepted" because is was successfully refereed:
@@ -99,6 +109,17 @@ Autoload := false,
 
 TestFile := "tst/testall.g",
 
-Keywords := ["threshold elements", "neural networks", "threshold logic"]
+Keywords := ["threshold elements", "neural networks", "threshold logic"],
+
+AutoDoc := rec(
+    TitlePage := rec(
+        Copyright := """
+        &copyright; 2018 by the authors<P/>
+
+        This package may be distributed under the terms and conditions of the
+        GNU Public License Version 2 or higher.
+        """,
+    )
+),
 
 ));

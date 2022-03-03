@@ -1,15 +1,15 @@
   
   
-                             [1X GAP 4 Package Thelma [101X
+                                    [1X Thelma [101X
   
   
                 [1X THreshold ELements, Modeling and Applications [101X
   
   
-                                     1.0.2
+                                      1.3
   
   
-                                      2018
+                                  3 March 2022
   
   
                                   Victor Bovdi
@@ -44,7 +44,7 @@
   -------------------------------------------------------
   
   
-  [1XContents (thelma)[101X
+  [1XContents (Thelma)[101X
   
   1 [33X[0;0YIntroduction[133X
     1.1 [33X[0;0YOverview over this manual[133X

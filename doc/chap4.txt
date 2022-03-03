@@ -23,29 +23,29 @@
   [10XNeuralNetwork[110X returns a neural network built from this inputs.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xte1:=ThresholdElement([1,1],1);[127X[104X
-    [4X[28X< threshold element with weight vector [ 1, 1 ] and threshold 1 >[128X[104X
-    [4X[25Xgap>[125X [27Xte2:=ThresholdElement([-1,-2],-2);[127X[104X
-    [4X[28X< threshold element with weight vector [ -1, -2 ] and threshold -2 >[128X[104X
-    [4X[25Xgap>[125X [27Xinner:=[te1,te2];[127X[104X
-    [4X[28X[ < threshold element with weight vector [ 1, 1 ] and threshold 1 >,[128X[104X
-    [4X[28X  < threshold element with weight vector [ -1, -2 ] and threshold -2 > ][128X[104X
-    [4X[25Xgap>[125X [27Xnn:=NeuralNetwork(inner,false);[127X[104X
-    [4X[28X< neural network with[128X[104X
-    [4X[28X2 threshold elements on inner layer and conjunction on outer level >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
-    [4X[28XInner Layer:[128X[104X
-    [4X[28X[ [[ 1, 1 ], 1], [[ -1, -2 ], -2] ][128X[104X
-    [4X[28XOuter Layer: conjunction[128X[104X
-    [4X[28XNeural Network realizes the function f :[128X[104X
-    [4X[28XBoolean function of 2 variables.[128X[104X
-    [4X[28X[ 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1 ] || 0[128X[104X
-    [4X[28XSum of Products:[ 1, 2 ][128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xte1:=ThresholdElement([1,1],1);[127X[104X
+    [4X[28X< threshold element with weight vector [ 1, 1 ] and threshold 1 >[128X[104X
+    [4X[25Xgap>[125X [27Xte2:=ThresholdElement([-1,-2],-2);[127X[104X
+    [4X[28X< threshold element with weight vector [ -1, -2 ] and threshold -2 >[128X[104X
+    [4X[25Xgap>[125X [27Xinner:=[te1,te2];[127X[104X
+    [4X[28X[ < threshold element with weight vector [ 1, 1 ] and threshold 1 >,[128X[104X
+    [4X[28X  < threshold element with weight vector [ -1, -2 ] and threshold -2 > ][128X[104X
+    [4X[25Xgap>[125X [27Xnn:=NeuralNetwork(inner,false);[127X[104X
+    [4X[28X< neural network with[128X[104X
+    [4X[28X2 threshold elements on inner layer and conjunction on outer level >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
+    [4X[28XInner Layer:[128X[104X
+    [4X[28X[ [[ 1, 1 ], 1], [[ -1, -2 ], -2] ][128X[104X
+    [4X[28XOuter Layer: conjunction[128X[104X
+    [4X[28XNeural Network realizes the function f :[128X[104X
+    [4X[28XBoolean function of 2 variables.[128X[104X
+    [4X[28X[ 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1 ] || 0[128X[104X
+    [4X[28XSum of Products:[ 1, 2 ][128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X4.1-2 IsNeuralNetwork[101X
@@ -56,11 +56,11 @@
   neural network (see [2XNeuralNetwork[102X ([14X4.1-1[114X)), and [10Xfalse[110X otherwise.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27X## Consider the neural network <C>nn</C> from the previous example.[127X[104X
-    [4X[25Xgap>[125X [27XIsNeuralNetwork(nn);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27X## Consider the neural network <C>nn</C> from the previous example.[127X[104X
+    [4X[25Xgap>[125X [27XIsNeuralNetwork(nn);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X4.1-3 OutputOfNeuralNetwork[101X
@@ -71,16 +71,16 @@
   the Boolean function, realized by [10XNNetwork[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=OutputOfNeuralNetwork(nn);[127X[104X
-    [4X[28X< Boolean function of 2 variables >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
-    [4X[28XBoolean function of 2 variables.[128X[104X
-    [4X[28X[ 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1 ] || 0[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=OutputOfNeuralNetwork(nn);[127X[104X
+    [4X[28X< Boolean function of 2 variables >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
+    [4X[28XBoolean function of 2 variables.[128X[104X
+    [4X[28X[ 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1 ] || 0[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   
@@ -98,31 +98,31 @@
   proposed in [GPR83].[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xx:=Indeterminate(GF(2),"x");;[127X[104X
-    [4X[25Xgap>[125X [27Xy:=Indeterminate(GF(2),"y");;[127X[104X
-    [4X[25Xgap>[125X [27Xz:=Indeterminate(GF(2),"z");;[127X[104X
-    [4X[25Xgap>[125X [27Xf:=PolynomialToBooleanFunction(x*y+z,3);[127X[104X
-    [4X[28X< Boolean function of 3 variables >[128X[104X
-    [4X[25Xgap>[125X [27Xnn:=BooleanFunctionByNeuralNetwork(f);[127X[104X
-    [4X[28X< neural network with[128X[104X
-    [4X[28X2 threshold elements on inner layer and disjunction on outer level >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
-    [4X[28XInner Layer:[128X[104X
-    [4X[28X[ [[ -1, -2, 4 ], 2], [[ 1, 2, -3 ], 3] ][128X[104X
-    [4X[28XOuter Layer: disjunction[128X[104X
-    [4X[28XNeural Network realizes the function f :[128X[104X
-    [4X[28XBoolean function of 3 variables.[128X[104X
-    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 0, 1 ] || 1[128X[104X
-    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 1 ] || 0[128X[104X
-    [4X[28XSum of Products:[ 1, 3, 5, 6 ][128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xx:=Indeterminate(GF(2),"x");;[127X[104X
+    [4X[25Xgap>[125X [27Xy:=Indeterminate(GF(2),"y");;[127X[104X
+    [4X[25Xgap>[125X [27Xz:=Indeterminate(GF(2),"z");;[127X[104X
+    [4X[25Xgap>[125X [27Xf:=PolynomialToBooleanFunction(x*y+z,3);[127X[104X
+    [4X[28X< Boolean function of 3 variables >[128X[104X
+    [4X[25Xgap>[125X [27Xnn:=BooleanFunctionByNeuralNetwork(f);[127X[104X
+    [4X[28X< neural network with[128X[104X
+    [4X[28X2 threshold elements on inner layer and disjunction on outer level >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
+    [4X[28XInner Layer:[128X[104X
+    [4X[28X[ [[ -1, -2, 4 ], 2], [[ 1, 2, -3 ], 3] ][128X[104X
+    [4X[28XOuter Layer: disjunction[128X[104X
+    [4X[28XNeural Network realizes the function f :[128X[104X
+    [4X[28XBoolean function of 3 variables.[128X[104X
+    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 0, 1 ] || 1[128X[104X
+    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 1 ] || 0[128X[104X
+    [4X[28XSum of Products:[ 1, 3, 5, 6 ][128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X4.2-2 BooleanFunctionByNeuralNetworkDASG[101X
@@ -138,26 +138,26 @@
   slightly modified version of this algorithm.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);[127X[104X
-    [4X[28X< Boolean function of 3 variables >[128X[104X
-    [4X[25Xgap>[125X [27Xnn:=BooleanFunctionByNeuralNetworkDASG(f);[127X[104X
-    [4X[28X< neural network with 2 threshold elements on inner layer and conjunction on outer level >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
-    [4X[28XInner Layer:[128X[104X
-    [4X[28X[ [[ 1, 4, 2 ], 3], [[ 1, -4, -2 ], -3] ][128X[104X
-    [4X[28XOuter Layer: conjunction[128X[104X
-    [4X[28XNeural Network realizes the function f :[128X[104X
-    [4X[28XBoolean function of 3 variables.[128X[104X
-    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 0, 1 ] || 0[128X[104X
-    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1, 1 ] || 0[128X[104X
-    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 1 ] || 0[128X[104X
-    [4X[28XSum of Products:[ 5, 6 ][128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);[127X[104X
+    [4X[28X< Boolean function of 3 variables >[128X[104X
+    [4X[25Xgap>[125X [27Xnn:=BooleanFunctionByNeuralNetworkDASG(f);[127X[104X
+    [4X[28X< neural network with 2 threshold elements on inner layer and conjunction on outer level >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(last);[127X[104X
+    [4X[28XInner Layer:[128X[104X
+    [4X[28X[ [[ 1, 4, 2 ], 3], [[ 1, -4, -2 ], -3] ][128X[104X
+    [4X[28XOuter Layer: conjunction[128X[104X
+    [4X[28XNeural Network realizes the function f :[128X[104X
+    [4X[28XBoolean function of 3 variables.[128X[104X
+    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 0, 1 ] || 0[128X[104X
+    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1, 1 ] || 0[128X[104X
+    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 1 ] || 0[128X[104X
+    [4X[28XSum of Products:[ 5, 6 ][128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   

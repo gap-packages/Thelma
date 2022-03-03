@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>GAP (thelma) - Chapter 4: Networks of Threshold Elements</title>
+<title>GAP (Thelma) - Chapter 4: Networks of Threshold Elements</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="GAPDoc2HTML" />
 <link rel="stylesheet" type="text/css" href="manual.css" />
@@ -57,17 +57,17 @@
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=ThresholdElement([1,1],1);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=ThresholdElement([1,1],1);</span>
 &lt; threshold element with weight vector [ 1, 1 ] and threshold 1 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElement([-1,-2],-2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElement([-1,-2],-2);</span>
 &lt; threshold element with weight vector [ -1, -2 ] and threshold -2 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">inner:=[te1,te2];</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">inner:=[te1,te2];</span>
 [ &lt; threshold element with weight vector [ 1, 1 ] and threshold 1 &gt;,
   &lt; threshold element with weight vector [ -1, -2 ] and threshold -2 &gt; ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nn:=NeuralNetwork(inner,false);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nn:=NeuralNetwork(inner,false);</span>
 &lt; neural network with
 2 threshold elements on inner layer and conjunction on outer level &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(last);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(last);</span>
 Inner Layer:
 [ [[ 1, 1 ], 1], [[ -1, -2 ], -2] ]
 Outer Layer: conjunction
@@ -91,8 +91,8 @@ Sum of Products:[ 1, 2 ]
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">## Consider the neural network &lt;C&gt;nn&lt;/C&gt; from the previous example.</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsNeuralNetwork(nn);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">## Consider the neural network &lt;C&gt;nn&lt;/C&gt; from the previous example.</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsNeuralNetwork(nn);</span>
 true
 
 </pre></div>
@@ -107,9 +107,9 @@ true
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=OutputOfNeuralNetwork(nn);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=OutputOfNeuralNetwork(nn);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(last);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(last);</span>
 Boolean function of 2 variables.
 [ 0, 0 ] || 0
 [ 0, 1 ] || 1
@@ -134,15 +134,15 @@ Boolean function of 2 variables.
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">z:=Indeterminate(GF(2),"z");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=PolynomialToBooleanFunction(x*y+z,3);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">z:=Indeterminate(GF(2),"z");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=PolynomialToBooleanFunction(x*y+z,3);</span>
 &lt; Boolean function of 3 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nn:=BooleanFunctionByNeuralNetwork(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nn:=BooleanFunctionByNeuralNetwork(f);</span>
 &lt; neural network with
 2 threshold elements on inner layer and disjunction on outer level &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(last);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(last);</span>
 Inner Layer:
 [ [[ -1, -2, 4 ], 2], [[ 1, 2, -3 ], 3] ]
 Outer Layer: disjunction
@@ -170,11 +170,11 @@ Sum of Products:[ 1, 3, 5, 6 ]
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);</span>
 &lt; Boolean function of 3 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nn:=BooleanFunctionByNeuralNetworkDASG(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nn:=BooleanFunctionByNeuralNetworkDASG(f);</span>
 &lt; neural network with 2 threshold elements on inner layer and conjunction on outer level &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(last);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(last);</span>
 Inner Layer:
 [ [[ 1, 4, 2 ], 3], [[ 1, -4, -2 ], -3] ]
 Outer Layer: conjunction

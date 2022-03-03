@@ -8,7 +8,7 @@
 <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-<title>GAP (thelma) - Chapter 3: Threshold Elements</title>
+<title>GAP (Thelma) - Chapter 3: Threshold Elements</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta name="generator" content="GAPDoc2HTML" />
 <link rel="stylesheet" type="text/css" href="manual.css" />
@@ -83,9 +83,9 @@ f(x_1,\dots,x_n) = 1, \quad \textrm{if} \quad \sum_{i = 1}^{n} w_i x_i \geq T, \
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement([1,2],3);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement([1,2],3);</span>
 &lt; threshold element with weight vector [ 1, 2 ] and threshold 3 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
 Weight vector = [ 1, 2 ], Threshold = 3.
 Threshold Element realizes the function f :
 Boolean function of 2 variables.
@@ -102,12 +102,12 @@ Sum of Products:[ 3 ]
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">w:=[1,2,4,-4,6,8,10,-25,6,32];;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">T:=60;;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement(w,T);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">w:=[1,2,4,-4,6,8,10,-25,6,32];;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">T:=60;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement(w,T);</span>
 &lt; threshold element with weight vector [ 1, 2, 4, -4, 6, 8, 10, -25, 6, 32
  ] and threshold 60 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
 Weight vector = [ 1, 2, 4, -4, 6, 8, 10, -25, 6, 32 ], Threshold = 60.
 Threshold Element realizes the function f :
 Sum of Products:[ 59, 155, 185, 187, 251, 315, 379, 411, 427, 441, 443, 507, 5\
@@ -125,11 +125,11 @@ Sum of Products:[ 59, 155, 185, 187, 251, 315, 379, 411, 427, 441, 443, 507, 5\
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement([1,2],3);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement([1,2],3);</span>
 &lt; threshold element with weight vector [ 1, 2 ] and threshold 3 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsThresholdElement(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsThresholdElement(te);</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsThresholdElement([[1,2],3]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsThresholdElement([[1,2],3]);</span>
 false
 
 </pre></div>
@@ -144,11 +144,11 @@ false
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement([1,2],3);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement([1,2],3);</span>
 &lt; threshold element with weight vector [ 1, 2 ] and threshold 3 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=OutputOfThresholdElement(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=OutputOfThresholdElement(te);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(f);</span>
 Boolean function of 2 variables.
 [ 0, 0 ] || 0
 [ 0, 1 ] || 0
@@ -167,9 +167,9 @@ Boolean function of 2 variables.
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement([1,2],3);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=ThresholdElement([1,2],3);</span>
 &lt; threshold element with weight vector [ 1, 2 ] and threshold 3 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sv:=StructureOfThresholdElement(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sv:=StructureOfThresholdElement(te);</span>
 [ [ 1, 2 ], 3 ]
 
 </pre></div>
@@ -184,7 +184,7 @@ Boolean function of 2 variables.
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=RandomThresholdElement(4,-10,10);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=RandomThresholdElement(4,-10,10);</span>
 &lt; threshold element with weight vector [ 7, -8, -6, 10 ] and threshold 2 &gt;
 
 </pre></div>
@@ -199,20 +199,20 @@ Boolean function of 2 variables.
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=ThresholdElement([1,2],3);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Print(OutputOfThresholdElement(te1),"\n");</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=ThresholdElement([1,2],3);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Print(OutputOfThresholdElement(te1),"\n");</span>
 [2, 2,[ 0, 0, 0, 1 ]]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElement([1,2],0);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Print(OutputOfThresholdElement(te2),"\n");</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElement([1,2],0);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Print(OutputOfThresholdElement(te2),"\n");</span>
 [2, 2,[ 1, 1, 1, 1 ]]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te3:=ThresholdElement([1,1],2);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Print(OutputOfThresholdElement(te3),"\n");</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te3:=ThresholdElement([1,1],2);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Print(OutputOfThresholdElement(te3),"\n");</span>
 [2, 2,[ 0, 0, 0, 1 ]]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1&lt;te2;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1&lt;te2;</span>
 true
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1&gt;te2;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1&gt;te2;</span>
 false
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1=te3;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1=te3;</span>
 true
 
 </pre></div>
@@ -253,9 +253,9 @@ b = \big(\;Y_1 \cdot G,\; \ldots, \; Y_n \cdot G, \; \textstyle \sum_{i=0}^{2^n-
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,0,0,1]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,0,0,1]);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CharacteristicVectorOfFunction(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">CharacteristicVectorOfFunction(f);</span>
 [ 2, 2, 2 ]
 
 </pre></div>
@@ -270,11 +270,11 @@ b = \big(\;Y_1 \cdot G,\; \ldots, \; Y_n \cdot G, \; \textstyle \sum_{i=0}^{2^n-
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,0,0,1]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,0,0,1]);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c:=CharacteristicVectorOfFunction(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c:=CharacteristicVectorOfFunction(f);</span>
 [ 2, 2, 2 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsCharacteristicVectorOfSTE(c);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsCharacteristicVectorOfSTE(c);</span>
 true
 
 </pre></div>
@@ -289,14 +289,14 @@ true
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(3,2,[0,1,0,1,0,1,1,0]);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k:=KernelOfBooleanFunction(f);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(k[1]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(3,2,[0,1,0,1,0,1,1,0]);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">k:=KernelOfBooleanFunction(f);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(k[1]);</span>
  . . 1
  . 1 1
  1 . 1
  1 1 .
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsInverseInKernel(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsInverseInKernel(f);</span>
 true
 
 </pre></div>
@@ -321,8 +321,8 @@ true
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">##Continuation of the previous example</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsKernelContainingPrecedingVectors(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">##Continuation of the previous example</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsKernelContainingPrecedingVectors(f);</span>
 false
 
 </pre></div>
@@ -357,9 +357,9 @@ false
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,1,1,0]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,1,1,0]);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRKernelBiggerOfCombSum(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">IsRKernelBiggerOfCombSum(f);</span>
 false
 
 </pre></div>
@@ -374,11 +374,11 @@ false
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(3,2,[1,1,0,0,1,0,0,0]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(3,2,[1,1,0,0,1,0,0,0]);</span>
 &lt; Boolean function of 3 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=BooleanFunctionBySTE(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=BooleanFunctionBySTE(f);</span>
 &lt; threshold element with weight vector [ -1, -4, -2 ] and threshold -2 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
 Weight vector = [ -1, -4, -2 ], Threshold = -2.
 Threshold Element realizes the function f :
 Boolean function of 3 variables.
@@ -391,9 +391,9 @@ Boolean function of 3 variables.
 [ 1, 1, 0 ] || 0
 [ 1, 1, 1 ] || 0
 Sum of Products:[ 0, 1, 4 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,1,1,0]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,1,1,0]);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=BooleanFunctionBySTE(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=BooleanFunctionBySTE(f);</span>
 [  ]
 
 </pre></div>
@@ -420,11 +420,11 @@ a \in f^{-1}(0)\quad \Longrightarrow \quad a\cdot w^T &lt; T,
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="1x001x0x";</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:="1x001x0x";</span>
 "1x001x0x"
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=PDBooleanFunctionBySTE(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=PDBooleanFunctionBySTE(f);</span>
 &lt; threshold element with weight vector [ -1, -2, -3 ] and threshold -1 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
 Weight vector = [ -1, -2, -3 ], Threshold = -1.
 Threshold Element realizes the function f :
 Boolean function of 3 variables.
@@ -456,19 +456,19 @@ Sum of Products:[ 0, 4 ]
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,0,0,1]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,0,0,1]);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=RandomThresholdElement(2,-2,2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=RandomThresholdElement(2,-2,2);</span>
 &lt; threshold element with weight vector [ 0, -1 ] and threshold 0 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te1));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te1));</span>
 Boolean function of 2 variables.
 [ 0, 0 ] || 1
 [ 0, 1 ] || 0
 [ 1, 0 ] || 1
 [ 1, 1 ] || 0
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElementTraining(te1,1,f,100);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElementTraining(te1,1,f,100);</span>
 &lt; threshold element with weight vector [ 2, 1 ] and threshold 3 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te2));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te2));</span>
 Boolean function of 2 variables.
 [ 0, 0 ] || 0
 [ 0, 1 ] || 0
@@ -487,19 +487,19 @@ Boolean function of 2 variables.
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,0,0,1]);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=LogicFunction(2,2,[0,0,0,1]);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=RandomThresholdElement(2,-2,2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te1:=RandomThresholdElement(2,-2,2);</span>
 &lt; threshold element with weight vector [ 0, 2 ] and threshold 2 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te1));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te1));</span>
 Boolean function of 2 variables.
 [ 0, 0 ] || 0
 [ 0, 1 ] || 1
 [ 1, 0 ] || 0
 [ 1, 1 ] || 1
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElementBatchTraining(te1,1,f,100);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te2:=ThresholdElementBatchTraining(te1,1,f,100);</span>
 &lt; threshold element with weight vector [ 2, 2 ] and threshold 3 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te2));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te2));</span>
 Boolean function of 2 variables.
 [ 0, 0 ] || 0
 [ 0, 1 ] || 0
@@ -528,20 +528,20 @@ f(x_1,\ldots,x_n)=x_{i_1} \vee \cdots \vee x_{i_k}, \qquad (k \leq n)
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">pol:=x*y+x+y;;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=PolynomialToBooleanFunction(pol,2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">pol:=x*y+x+y;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=PolynomialToBooleanFunction(pol,2);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(f);</span>
 Boolean function of 2 variables.
 [ 0, 0 ] || 0
 [ 0, 1 ] || 1
 [ 1, 0 ] || 1
 [ 1, 1 ] || 1
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=WinnowAlgorithm(f,2,100);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=WinnowAlgorithm(f,2,100);</span>
 &lt; threshold element with weight vector [ 1, 1 ] and threshold 1 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te));</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(OutputOfThresholdElement(te));</span>
 Boolean function of 2 variables.
 [ 0, 0 ] || 0
 [ 0, 1 ] || 1
@@ -576,18 +576,18 @@ Boolean function of 2 variables.
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">##Conjunction can not be trained by Winnow algorithm.</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">pol:=x*y;;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=PolynomialToBooleanFunction(pol,2);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">##Conjunction can not be trained by Winnow algorithm.</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">pol:=x*y;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=PolynomialToBooleanFunction(pol,2);</span>
 &lt; Boolean function of 2 variables &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=WinnowAlgorithm(f,2,100);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=WinnowAlgorithm(f,2,100);</span>
 [  ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">## But in the case of Winnow2 we can obtain the desirable result.</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=Winnow2Algorithm(f,2,100);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">## But in the case of Winnow2 we can obtain the desirable result.</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=Winnow2Algorithm(f,2,100);</span>
 &lt; threshold element with weight vector [ 1/2, 1/2 ] and threshold 1 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
 Weight vector = [ 1/2, 1/2 ], Threshold = 1.
 Threshold Element realizes the function f :
 Boolean function of 2 variables.
@@ -611,14 +611,14 @@ Sum of Products:[ 3 ]
 
 <div class="example"><pre>
 
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+x+y;;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">pol:=x*y+x+y;;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=PolynomialToBooleanFunction(pol,2);;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=STESynthesis(f);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=x*y+x+y;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">x:=Indeterminate(GF(2),"x");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">y:=Indeterminate(GF(2),"y");;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">pol:=x*y+x+y;;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">f:=PolynomialToBooleanFunction(pol,2);;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">te:=STESynthesis(f);</span>
 &lt; threshold element with weight vector [ 2, 2 ] and threshold 1 &gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display(te);</span>
 Weight vector = [ 2, 2 ], Threshold = 1.
 Threshold Element realizes the function f :
 Boolean function of 2 variables.

@@ -34,29 +34,29 @@
   if we deal with discrete logic functions.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,0,1,1]);[127X[104X
-    [4X[28X< Boolean function of 2 variables >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
-    [4X[28XBoolean function of 2 variables.[128X[104X
-    [4X[28X[ 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1 ] || 0[128X[104X
-    [4X[28X[ 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1 ] || 1[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,3,[0,0,1,1,2,1,2,0,1]);[127X[104X
-    [4X[28X< 3-valued logic function of 2 variables >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
-    [4X[28X3-valued logic function of 2 variables.[128X[104X
-    [4X[28X[ 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1 ] || 0[128X[104X
-    [4X[28X[ 0, 2 ] || 1[128X[104X
-    [4X[28X[ 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1 ] || 2[128X[104X
-    [4X[28X[ 1, 2 ] || 1[128X[104X
-    [4X[28X[ 2, 0 ] || 2[128X[104X
-    [4X[28X[ 2, 1 ] || 0[128X[104X
-    [4X[28X[ 2, 2 ] || 1[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,0,1,1]);[127X[104X
+    [4X[28X< Boolean function of 2 variables >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
+    [4X[28XBoolean function of 2 variables.[128X[104X
+    [4X[28X[ 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1 ] || 0[128X[104X
+    [4X[28X[ 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1 ] || 1[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,3,[0,0,1,1,2,1,2,0,1]);[127X[104X
+    [4X[28X< 3-valued logic function of 2 variables >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
+    [4X[28X3-valued logic function of 2 variables.[128X[104X
+    [4X[28X[ 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1 ] || 0[128X[104X
+    [4X[28X[ 0, 2 ] || 1[128X[104X
+    [4X[28X[ 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1 ] || 2[128X[104X
+    [4X[28X[ 1, 2 ] || 1[128X[104X
+    [4X[28X[ 2, 0 ] || 2[128X[104X
+    [4X[28X[ 2, 1 ] || 0[128X[104X
+    [4X[28X[ 2, 2 ] || 1[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X2.1-2 IsLogicFunction[101X
@@ -67,11 +67,11 @@
   logic function (see [2XLogicFunction[102X ([14X2.1-1[114X)), and [10Xfalse[110X otherwise.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,1,1,1]);;[127X[104X
-    [4X[25Xgap>[125X [27XIsLogicFunction(f);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,1,1,1]);;[127X[104X
+    [4X[25Xgap>[125X [27XIsLogicFunction(f);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X2.1-3 PolynomialToBooleanFunction[101X
@@ -83,19 +83,19 @@
   is realized by [10XPol[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xx:=Indeterminate(GF(2),"x");;[127X[104X
-    [4X[25Xgap>[125X [27Xy:=Indeterminate(GF(2),"y");;[127X[104X
-    [4X[25Xgap>[125X [27Xpol:=x+y;;[127X[104X
-    [4X[25Xgap>[125X [27Xf:=PolynomialToBooleanFunction(pol,2);[127X[104X
-    [4X[28X< Boolean function of 2 variables >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
-    [4X[28XBoolean function of 2 variables.[128X[104X
-    [4X[28X[ 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1 ] || 0[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xx:=Indeterminate(GF(2),"x");;[127X[104X
+    [4X[25Xgap>[125X [27Xy:=Indeterminate(GF(2),"y");;[127X[104X
+    [4X[25Xgap>[125X [27Xpol:=x+y;;[127X[104X
+    [4X[25Xgap>[125X [27Xf:=PolynomialToBooleanFunction(pol,2);[127X[104X
+    [4X[28X< Boolean function of 2 variables >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
+    [4X[28XBoolean function of 2 variables.[128X[104X
+    [4X[28X[ 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1 ] || 0[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X2.1-4 IsUnateInVariable[101X
@@ -125,26 +125,26 @@
   otherwise.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);[127X[104X
-    [4X[28X< Boolean function of 3 variables >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
-    [4X[28XBoolean function of 3 variables.[128X[104X
-    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 0, 1 ] || 0[128X[104X
-    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1, 1 ] || 0[128X[104X
-    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 1 ] || 0[128X[104X
-    [4X[25Xgap>[125X [27XIsUnateInVariable(f,1);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27XIsUnateInVariable(f,2);[127X[104X
-    [4X[28Xfalse[128X[104X
-    [4X[25Xgap>[125X [27XIsUnateInVariable(f,3);[127X[104X
-    [4X[28Xfalse[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);[127X[104X
+    [4X[28X< Boolean function of 3 variables >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
+    [4X[28XBoolean function of 3 variables.[128X[104X
+    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 0, 1 ] || 0[128X[104X
+    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1, 1 ] || 0[128X[104X
+    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 1 ] || 0[128X[104X
+    [4X[25Xgap>[125X [27XIsUnateInVariable(f,1);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27XIsUnateInVariable(f,2);[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[25Xgap>[125X [27XIsUnateInVariable(f,3);[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X2.1-5 IsUnateBooleanFunction[101X
@@ -165,14 +165,14 @@
   [10Xtrue[110X if [10XFunc[110X is unate and [10Xfalse[110X otherwise.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,1,1,1]);;[127X[104X
-    [4X[25Xgap>[125X [27XIsUnateBooleanFunction(f);[127X[104X
-    [4X[28Xtrue[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,1,1,0]);;[127X[104X
-    [4X[25Xgap>[125X [27XIsUnateBooleanFunction(f);[127X[104X
-    [4X[28Xfalse[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,1,1,1]);;[127X[104X
+    [4X[25Xgap>[125X [27XIsUnateBooleanFunction(f);[127X[104X
+    [4X[28Xtrue[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,1,1,0]);;[127X[104X
+    [4X[25Xgap>[125X [27XIsUnateBooleanFunction(f);[127X[104X
+    [4X[28Xfalse[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X2.1-6 InfluenceOfVariable[101X
@@ -189,22 +189,22 @@
   variable by [22X2^n[122X, where [22Xn[122X is the number of variables of [10XFunc[110X).[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);[127X[104X
-    [4X[28X< Boolean function of 3 variables >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
-    [4X[28XBoolean function of 3 variables.[128X[104X
-    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 0, 1 ] || 0[128X[104X
-    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1, 1 ] || 0[128X[104X
-    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 1 ] || 0[128X[104X
-    [4X[25Xgap>[125X [27XInfluenceOfVariable(f,2);[127X[104X
-    [4X[28X2[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);[127X[104X
+    [4X[28X< Boolean function of 3 variables >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
+    [4X[28XBoolean function of 3 variables.[128X[104X
+    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 0, 1 ] || 0[128X[104X
+    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1, 1 ] || 0[128X[104X
+    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 1 ] || 0[128X[104X
+    [4X[25Xgap>[125X [27XInfluenceOfVariable(f,2);[127X[104X
+    [4X[28X2[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X2.1-7 SelfDualExtensionOfBooleanFunction[101X
@@ -236,28 +236,28 @@
   [10XSelfDualExtensionOfBooleanFunction[110X returns the self-dual extension of [10XFunc[110X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,0,0,1]);[127X[104X
-    [4X[28X< Boolean function of 2 variables >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
-    [4X[28XBoolean function of 2 variables.[128X[104X
-    [4X[28X[ 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1 ] || 0[128X[104X
-    [4X[28X[ 1, 0 ] || 0[128X[104X
-    [4X[28X[ 1, 1 ] || 1[128X[104X
-    [4X[25Xgap>[125X [27Xfsd:=SelfDualExtensionOfBooleanFunction(f);[127X[104X
-    [4X[28X< Boolean function of 3 variables >[128X[104X
-    [4X[25Xgap>[125X [27XDisplay(fsd);[127X[104X
-    [4X[28XBoolean function of 3 variables.[128X[104X
-    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 0, 1 ] || 0[128X[104X
-    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
-    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1, 1 ] || 1[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,0,0,1]);[127X[104X
+    [4X[28X< Boolean function of 2 variables >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
+    [4X[28XBoolean function of 2 variables.[128X[104X
+    [4X[28X[ 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1 ] || 0[128X[104X
+    [4X[28X[ 1, 0 ] || 0[128X[104X
+    [4X[28X[ 1, 1 ] || 1[128X[104X
+    [4X[25Xgap>[125X [27Xfsd:=SelfDualExtensionOfBooleanFunction(f);[127X[104X
+    [4X[28X< Boolean function of 3 variables >[128X[104X
+    [4X[25Xgap>[125X [27XDisplay(fsd);[127X[104X
+    [4X[28XBoolean function of 3 variables.[128X[104X
+    [4X[28X[ 0, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 0, 1 ] || 0[128X[104X
+    [4X[28X[ 0, 1, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 0, 0 ] || 0[128X[104X
+    [4X[28X[ 1, 0, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1, 1 ] || 1[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X2.1-8 SplitBooleanFunction[101X
@@ -303,25 +303,25 @@
   entries: the resulting Boolean logic functions.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,1,1,0]);;[127X[104X
-    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
-    [4X[28XBoolean function of 2 variables.[128X[104X
-    [4X[28X[ 0, 0 ] || 0[128X[104X
-    [4X[28X[ 0, 1 ] || 1[128X[104X
-    [4X[28X[ 1, 0 ] || 1[128X[104X
-    [4X[28X[ 1, 1 ] || 0[128X[104X
-    [4X[25Xgap>[125X [27Xout:=SplitBooleanFunction(f,1,false);;[127X[104X
-    [4X[25Xgap>[125X [27XPrint(out[1]);[127X[104X
-    [4X[28X[2, 2,[ 0, 1, 1, 1 ]][128X[104X
-    [4X[25Xgap>[125X [27XPrint(out[2]);[127X[104X
-    [4X[28X[2, 2,[ 1, 1, 1, 0 ]][128X[104X
-    [4X[25Xgap>[125X [27Xout:=SplitBooleanFunction(f,1,true);;[127X[104X
-    [4X[25Xgap>[125X [27XPrint(out[1]);[127X[104X
-    [4X[28X[2, 2,[ 0, 1, 0, 0 ]][128X[104X
-    [4X[25Xgap>[125X [27XPrint(out[2]);[127X[104X
-    [4X[28X[2, 2,[ 0, 0, 1, 0 ]][128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(2,2,[0,1,1,0]);;[127X[104X
+    [4X[25Xgap>[125X [27XDisplay(f);[127X[104X
+    [4X[28XBoolean function of 2 variables.[128X[104X
+    [4X[28X[ 0, 0 ] || 0[128X[104X
+    [4X[28X[ 0, 1 ] || 1[128X[104X
+    [4X[28X[ 1, 0 ] || 1[128X[104X
+    [4X[28X[ 1, 1 ] || 0[128X[104X
+    [4X[25Xgap>[125X [27Xout:=SplitBooleanFunction(f,1,false);;[127X[104X
+    [4X[25Xgap>[125X [27XPrint(out[1]);[127X[104X
+    [4X[28X[2, 2,[ 0, 1, 1, 1 ]][128X[104X
+    [4X[25Xgap>[125X [27XPrint(out[2]);[127X[104X
+    [4X[28X[2, 2,[ 1, 1, 1, 0 ]][128X[104X
+    [4X[25Xgap>[125X [27Xout:=SplitBooleanFunction(f,1,true);;[127X[104X
+    [4X[25Xgap>[125X [27XPrint(out[1]);[127X[104X
+    [4X[28X[2, 2,[ 0, 1, 0, 0 ]][128X[104X
+    [4X[25Xgap>[125X [27XPrint(out[2]);[127X[104X
+    [4X[28X[2, 2,[ 0, 0, 1, 0 ]][128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X2.1-9 KernelOfBooleanFunction[101X
@@ -350,11 +350,11 @@
   and the second element equals either [22X1[122X or [22X0[122X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27Xf:=LogicFunction(3,2,[0,1,1,0,1,0,0,0]);;[127X[104X
-    [4X[25Xgap>[125X [27Xk:=KernelOfBooleanFunction(f);[127X[104X
-    [4X[28X[ [ [ 0, 0, 1 ], [ 0, 1, 0 ], [ 1, 0, 0 ] ], 1 ][128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27Xf:=LogicFunction(3,2,[0,1,1,0,1,0,0,0]);;[127X[104X
+    [4X[25Xgap>[125X [27Xk:=KernelOfBooleanFunction(f);[127X[104X
+    [4X[28X[ [ [ 0, 0, 1 ], [ 0, 1, 0 ], [ 1, 0, 0 ] ], 1 ][128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
   [1X2.1-10 ReducedKernelOfBooleanFunction[101X
@@ -385,25 +385,25 @@
   kernel [22XT(f)[122X of [22Xf[122X.[133X
   
   [4X[32X  Example  [32X[104X
-    [4X[28X[128X[104X
-    [4X[25Xgap>[125X [27X## Continuation of Example 2.2.4[127X[104X
-    [4X[25Xgap>[125X [27Xrk:=ReducedKernelOfBooleanFunction(k[1]);;[127X[104X
-    [4X[25Xgap>[125X [27Xj:=1;;[127X[104X
-    [4X[25Xgap>[125X [27Xfor i in rk do Print(j,".\n"); Display(i); Print("\n"); j:=j+1; od;[127X[104X
-    [4X[28X1.[128X[104X
-    [4X[28X . . .[128X[104X
-    [4X[28X . 1 1[128X[104X
-    [4X[28X 1 . 1[128X[104X
-    [4X[28X[128X[104X
-    [4X[28X2.[128X[104X
-    [4X[28X . 1 1[128X[104X
-    [4X[28X . . .[128X[104X
-    [4X[28X 1 1 .[128X[104X
-    [4X[28X[128X[104X
-    [4X[28X3.[128X[104X
-    [4X[28X 1 . 1[128X[104X
-    [4X[28X 1 1 .[128X[104X
-    [4X[28X . . .[128X[104X
-    [4X[28X[128X[104X
+    [4X[28X[128X[104X
+    [4X[25Xgap>[125X [27X## Continuation of Example 2.2.4[127X[104X
+    [4X[25Xgap>[125X [27Xrk:=ReducedKernelOfBooleanFunction(k[1]);;[127X[104X
+    [4X[25Xgap>[125X [27Xj:=1;;[127X[104X
+    [4X[25Xgap>[125X [27Xfor i in rk do Print(j,".\n"); Display(i); Print("\n"); j:=j+1; od;[127X[104X
+    [4X[28X1.[128X[104X
+    [4X[28X . . .[128X[104X
+    [4X[28X . 1 1[128X[104X
+    [4X[28X 1 . 1[128X[104X
+    [4X[28X[128X[104X
+    [4X[28X2.[128X[104X
+    [4X[28X . 1 1[128X[104X
+    [4X[28X . . .[128X[104X
+    [4X[28X 1 1 .[128X[104X
+    [4X[28X[128X[104X
+    [4X[28X3.[128X[104X
+    [4X[28X 1 . 1[128X[104X
+    [4X[28X 1 1 .[128X[104X
+    [4X[28X . . .[128X[104X
+    [4X[28X[128X[104X
   [4X[32X[104X
   
