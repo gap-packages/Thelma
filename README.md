@@ -5,8 +5,6 @@ The GAP 4 package `thelma'
 Introduction
 ------------
 
-This is release 1.02 of the package `thelma`.
-
 The features of this package include
 
   - checking the single threshold element realizability of a given boolean function;
