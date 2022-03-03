@@ -4,8 +4,6 @@
 #W                                       Vasyl Laver  <vasyllaver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: iterative_methods.gi,v 1.02 $
-##
 #Y  Copyright (C)  2018,  UAE University, UAE
 ##
 #############################################################################
@@ -697,7 +695,3 @@ local f1,var,n;
 	f1:=THELMA_INTERNAL_PolToGF2(f,n);
 	return THELMA_INTERNAL_STESynthesis(f1);
 end);
-
-
-#E
-##

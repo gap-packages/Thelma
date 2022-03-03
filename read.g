@@ -4,8 +4,6 @@
 #W                                    Vasyl Laver    <vasyl.laver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: init.g,v 1.02 $
-##
 #Y  Copyright (C)  2018,  UAEU, Al Ain, United Arab Emirates
 ##
 #############################################################################
@@ -21,5 +19,3 @@ ReadPackage( "thelma", "lib/ste_realizability.gi" );
 ReadPackage( "thelma", "lib/neural_network.gi" );
 ReadPackage( "thelma", "lib/iterative_methods.gi" );
 ReadPackage( "thelma", "lib/mvthrel.gi" );
-
-#E  read.g  . . . . . . . . . . . . . . . . . . . . . . . . . . .  ends here

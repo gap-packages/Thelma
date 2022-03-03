@@ -4,8 +4,6 @@
 #W                                       Vasyl Laver  <vasyllaver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: mvthrel.gi,v 1.02 $
-##
 #Y  Copyright (C)  2018,  UAE University, UAE
 ##
 #############################################################################
@@ -23,4 +21,3 @@ DeclareGlobalFunction( "StructureOfMVThresholdElement" );
 DeclareGlobalFunction( "IsMVThresholdElement" );
 DeclareGlobalFunction( "MVBooleanFunctionBySTE" );
 DeclareGlobalFunction( "MVThresholdElementTraining" );
-#E

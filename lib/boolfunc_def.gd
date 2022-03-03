@@ -4,8 +4,6 @@
 #W                                       Vasyl Laver  <vasyllaver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: boolfunc_def.gd,v 1.02 $
-##
 #Y  Copyright (C)  2018,  UAE University, UAE
 ##
 
@@ -26,7 +24,3 @@ DeclareOperation("IsUnateBooleanFunction",[IsObject]);
 DeclareOperation("SelfDualExtensionOfBooleanFunction",[IsObject]);
 DeclareOperation("InfluenceOfVariable",[IsObject,IsPosInt]);
 DeclareOperation("SplitBooleanFunction",[IsObject,IsPosInt,IsBool]);
-
-
-#E
-##

@@ -1032,5 +1032,3 @@ BindGlobal("THELMA_INTERNAL_MappingBoolToInt",function(a,r,j,u)
 
 	return output;
 end);
-#E
-##

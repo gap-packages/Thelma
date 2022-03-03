@@ -11,6 +11,3 @@ gap> for f in t do if OutputOfNeuralNetwork(BooleanFunctionByNeuralNetwork(Logic
 gap> test;
 true
 gap> STOP_TEST( "test-n-3.tst", 200000000000 );
-
-##############################################################
-#E
