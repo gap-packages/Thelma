@@ -45,8 +45,6 @@ directories:
 
         PackageInfo.g   information file for automatic processing
 
-        version         the version number 1.02
-
 Installation
 ------------
 
