@@ -8,8 +8,8 @@
 SetPackageInfo( rec(
 PackageName := "Thelma",
 Subtitle := "THreshold ELements, Modeling and Applications",
-Version := "1.02",
-Date := "06/02/2019",
+Version := "1.3",
+Date := "03/03/2022",
 License := "GPL-2.0-or-later",
 
 PackageWWWHome := Concatenation( "https://gap-packages.github.io/", ~.PackageName ),
