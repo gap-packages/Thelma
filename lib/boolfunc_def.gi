@@ -4,8 +4,6 @@
 #W                                       Vasyl Laver  <vasyllaver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: boolfunc_def.gi,v 1.02 $
-##
 #Y  Copyright (C)  2018,  UAE University, UAE
 ##
 #############################################################################
@@ -1177,7 +1175,3 @@ local f1,var,n,temp;
 	temp:=THELMA_INTERNAL_SplitBooleanFunction(f1,v,b);
 	return [LogicFunction(n,2,List(temp[1],Order)),LogicFunction(n,2,List(temp[2],Order))];
 end);
-
-
-#E
-##

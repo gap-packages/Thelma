@@ -619,6 +619,3 @@ Multi-Valued Threshold Element realizes the function f :
 
 
 gap> STOP_TEST( "test-examples.tst", 200000000000 );
-
-##############################################################
-#E

@@ -4,8 +4,6 @@
 #W                                       Vasyl Laver  <vasyllaver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: char_vectors.g,v 1.00 $
-##
 #Y  Copyright (C)  2018,  UAE University, UAE
 ##
 #############################################################################

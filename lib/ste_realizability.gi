@@ -4,8 +4,6 @@
 #W                                       Vasyl Laver  <vasyllaver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: ste_realizability.gi,v 1.02 $
-##
 #Y  Copyright (C)  2018,  UAE University, UAE
 ##
 #############################################################################
@@ -1177,8 +1175,3 @@ function(ker1, ker0)
 	te:=BooleanFunctionBySTE(ker,onezero);
 	return te;
 end);
-
-
-
-#E
-##

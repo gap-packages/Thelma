@@ -4,8 +4,6 @@
 #W                                       Vasyl Laver  <vasyllaver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: iterative_methods.gd,v 1.00 $
-##
 #Y  Copyright (C)  2018,  UAE University, UAE
 ##
 #############################################################################
@@ -19,7 +17,3 @@ DeclareOperation("ThresholdElementBatchTraining",[IsThresholdElementObj, IsPosIn
 DeclareOperation("WinnowAlgorithm",[IsObject, IsPosInt, IsPosInt]);
 DeclareOperation("Winnow2Algorithm",[IsObject, IsPosInt, IsPosInt]);
 DeclareOperation("STESynthesis",[IsObject]);
-
-
-#E
-##

@@ -4,8 +4,6 @@
 #W                                       Vasyl Laver  <vasyllaver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: threl_def.gd,v 1.02 $
-##
 #Y  Copyright (C)  2018,  UAE University, UAE
 ##
 #############################################################################
@@ -20,5 +18,3 @@ DeclareGlobalFunction( "OutputOfThresholdElement" );
 DeclareGlobalFunction( "StructureOfThresholdElement" );
 DeclareGlobalFunction( "IsThresholdElement" );
 DeclareGlobalFunction( "RandomThresholdElement" );
-
-#E

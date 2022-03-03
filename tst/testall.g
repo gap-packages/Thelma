@@ -10,7 +10,3 @@ TestDirectory(DirectoriesPackageLibrary( "thelma", "tst" ),
       testOptions := rec(compareFunction := "uptowhitespace") ) );
 
 FORCE_QUIT_GAP(1);
-
-##
-#E
-###############################################################################

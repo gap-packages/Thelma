@@ -4,8 +4,6 @@
 #W                                       Vasyl Laver  <vasyllaver@uzhnu.edu.ua>
 ##
 ##
-#H  @(#)$Id: ste_realizability.gd,v 1.02 $
-##
 #Y  Copyright (C)  2018,  UAE University, UAE
 ##
 #############################################################################
@@ -17,8 +15,3 @@
 
 DeclareOperation("BooleanFunctionBySTE", [IsObject]);
 DeclareOperation("PDBooleanFunctionBySTE", [IsString]);
-
-
-
-#E
-##
