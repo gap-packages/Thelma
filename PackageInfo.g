@@ -105,7 +105,6 @@ BannerString := Concatenation(
   "For help, type: ?Thelma: \n",
   "----------------------------------------------------------------\n" ),
 
-Autoload := false,
 
 TestFile := "tst/testall.g",
 
