@@ -64,7 +64,7 @@
   <title>Realization of boolean functions using threshold elements</title>
   <journal>Kibernetika (Kiev)</journal>
   <year>1983</year>
-  <number>6</number>
+  <volume>6</volume>
   <pages>62--67</pages>
 </article></entry>
 
@@ -101,7 +101,7 @@
   <year>1965</year>
 </book></entry>
 
-<entry id="Avedillo1999"><inbook>
+<entry id="Avedillo1999"><incollection>
   <author>
     <name><first>M.J.</first><last>Avedillo</last></name>
     <name><first>J.M.</first><last>Quintana</last></name>
@@ -109,9 +109,12 @@
   </author>
   <title>Threshold Logic</title>
   <booktitle>Wiley Encyclopedia of Electrical and Electronics Engineering</booktitle>
-  <publisher>American Cancer Society</publisher>
+  <publisher>Wiley-Interscience</publisher>
   <year>1999</year>
-</inbook></entry>
+  <pages>178--190</pages>
+  <url>https://doi.org/10.1002/047134608X.W2290</url>
+  <other type="doi">10.1002/047134608X.W2290</other>
+</incollection></entry>
 
 
 <entry id="Horvath16"><article>
