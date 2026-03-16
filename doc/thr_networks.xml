@@ -30,8 +30,7 @@ can be either <C>true</C> (for disjunction), <C>false</C> (for conjunction), or 
 one layer) the function <C>NeuralNetwork</C> returns a neural network built from this inputs.
 
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> te1:=ThresholdElement([1,1],1);
 < threshold element with weight vector [ 1, 1 ] and threshold 1 >
 gap> te2:=ThresholdElement([-1,-2],-2);
@@ -53,8 +52,7 @@ Boolean function of 2 variables.
 [ 1, 0 ] || 1
 [ 1, 1 ] || 0
 Sum of Products:[ 1, 2 ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -64,13 +62,11 @@ Sum of Products:[ 1, 2 ]
 For the object <C>Obj</C> the function <C>IsNeuralNetwork</C> returns <C>true</C> if
 <C>Obj</C> is a neural network (see <Ref Func="NeuralNetwork" />), and <C>false</C> otherwise.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> ## Consider the neural network <C>nn</C> from the previous example.
 gap> IsNeuralNetwork(nn);
 true
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -79,8 +75,7 @@ true
 <!-- The names chosen for the arguments describe their meaning.-->
 For the neural network <C>NNetwork</C> the function <C>OutputOfNeuralNetwork</C> returns the Boolean function, realized by <C>NNetwork</C>.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=OutputOfNeuralNetwork(nn);
 < Boolean function of 2 variables >
 gap> Display(last);
@@ -89,8 +84,7 @@ Boolean function of 2 variables.
 [ 0, 1 ] || 1
 [ 1, 0 ] || 1
 [ 1, 1 ] || 0
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 </Section>
@@ -107,8 +101,7 @@ For the Boolean function <C>Func</C> the function <C>BooleanFunctionByNeuralNetw
 which realizes <C>Func</C> (see <Ref Func="NeuralNetwork" />).
 The realization of this function is based on the algorithm proposed in <Cite Key="GecheRobotyshyn83"/>.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> x:=Indeterminate(GF(2),"x");;
 gap> y:=Indeterminate(GF(2),"y");;
 gap> z:=Indeterminate(GF(2),"z");;
@@ -132,8 +125,7 @@ Boolean function of 3 variables.
 [ 1, 1, 0 ] || 1
 [ 1, 1, 1 ] || 0
 Sum of Products:[ 1, 3, 5, 6 ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 
@@ -149,8 +141,7 @@ variables with the biggest influence. The DASG algorithm (DASG - Decomposition A
 for Synthesis and Generalization) was proposed in <Cite Key="Subirats2008"/>,
 however we use a slightly modified version of this algorithm.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);
 < Boolean function of 3 variables >
 gap> nn:=BooleanFunctionByNeuralNetworkDASG(f);
@@ -170,8 +161,7 @@ Boolean function of 3 variables.
 [ 1, 1, 0 ] || 1
 [ 1, 1, 1 ] || 0
 Sum of Products:[ 5, 6 ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 </Section>
 

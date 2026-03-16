@@ -36,8 +36,7 @@ For the list of rational numbers <C>Weights</C> and the rational <C>Threshold</C
 the function <C>ThresholdElement</C> returns a threshold element with the
 number of inputs equal to the length of the <C>Weights</C> list.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> te:=ThresholdElement([1,2],3);
 < threshold element with weight vector [ 1, 2 ] and threshold 3 >
 gap> Display(te);
@@ -49,15 +48,13 @@ Boolean function of 2 variables.
 [ 1, 0 ] || 0
 [ 1, 1 ] || 1
 Sum of Products:[ 3 ]
-]]>
-</Example>
+]]></Example>
 
 The function <C>Display</C> outputs the stucture of the given threshold element <C>ThrEl</C> and
 the Sum of Products or Product of Sums representation of the function realized by <C>ThrEl</C>.
 For threshold elements of <M>n \leq 4</M> variables it also prints the truth table of the realized Boolean function.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> w:=[1,2,4,-4,6,8,10,-25,6,32];;
 gap> T:=60;;
 gap> te:=ThresholdElement(w,T);
@@ -68,8 +65,7 @@ Weight vector = [ 1, 2, 4, -4, 6, 8, 10, -25, 6, 32 ], Threshold = 60.
 Threshold Element realizes the function f :
 Sum of Products:[ 59, 155, 185, 187, 251, 315, 379, 411, 427, 441, 443, 507, 5\
 71, 667, 697, 699, 763, 827, 891, 923, 939, 953, 955, 1019 ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 
@@ -81,16 +77,14 @@ Sum of Products:[ 59, 155, 185, 187, 251, 315, 379, 411, 427, 441, 443, 507, 5\
 For the object <C>Obj</C> the function <C>IsThresholdElement</C> returns <C>true</C> if
 <C>Obj</C> is a threshold element (see <Ref Func="ThresholdElement" />), and <C>false</C> otherwise.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> te:=ThresholdElement([1,2],3);
 < threshold element with weight vector [ 1, 2 ] and threshold 3 >
 gap> IsThresholdElement(te);
 true
 gap> IsThresholdElement([[1,2],3]);
 false
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -100,8 +94,7 @@ false
 For the threshold element <C>ThrEl</C> the function <C>OutputOfThresholdElement</C> returns the
 Boolean function, realized by <C>ThrEl</C>.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> te:=ThresholdElement([1,2],3);
 < threshold element with weight vector [ 1, 2 ] and threshold 3 >
 gap> f:=OutputOfThresholdElement(te);
@@ -112,8 +105,7 @@ Boolean function of 2 variables.
 [ 0, 1 ] || 0
 [ 1, 0 ] || 0
 [ 1, 1 ] || 1
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -124,14 +116,12 @@ Boolean function of 2 variables.
 For the threshold element <C>ThrEl</C> the function <C>StructureOfThresholdElement</C> returns the
 structure vector [<C>Weights</C>,<C>Threshold</C>] (see <Ref Func="ThresholdElement" />).
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> te:=ThresholdElement([1,2],3);
 < threshold element with weight vector [ 1, 2 ] and threshold 3 >
 gap> sv:=StructureOfThresholdElement(te);
 [ [ 1, 2 ], 3 ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -143,12 +133,10 @@ For the integers <C>NumVar</C>, <C>Lo</C>, and <C>Hi</C>, the function <C>Random
 a threshold element of <C>NumVar</C> variables with a pseudo random integer weight vector and an integer threshold,
 where both the weights and the threshold are chosen from the interval [<C>Lo</C>, <C>Hi</C>].
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> te:=RandomThresholdElement(4,-10,10);
 < threshold element with weight vector [ 7, -8, -6, 10 ] and threshold 2 >
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -162,8 +150,7 @@ resprectively.
 By comparison of two threshold elements we mean the comparison of the truth vectors of <M>f_1</M> and <M>f_2</M>
 (see <Ref Func="OutputOfThresholdElement"/>).
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> te1:=ThresholdElement([1,2],3);;
 gap> Print(OutputOfThresholdElement(te1),"\n");
 [2, 2,[ 0, 0, 0, 1 ]]
@@ -179,8 +166,7 @@ gap> te1>te2;
 false
 gap> te1=te3;
 true
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 </Section>
 
@@ -216,14 +202,12 @@ such vectors for STE-realizable functions of <M>n \leq 6</M> variables obtained 
 For the Boolean function <C>Func</C> the function <C>CharacteristicVectorOfFunction</C> returns a characteristic vector.
 There are no limitations on the cardinality of <C>Func</C>, but the database of STE-realizable functions is given only for <M>n \leq 6</M> variables.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,0,0,1]);
 < Boolean function of 2 variables >
 gap> CharacteristicVectorOfFunction(f);
 [ 2, 2, 2 ]
-]]>
-</Example>
+]]></Example>
 
 </Description> </ManSection>
 
@@ -236,16 +220,14 @@ For the characteristic vector <C>ChVect</C> (see <Ref Func="CharacteristicVector
 returns <C>true</C> if <C>ChVect</C> is a characteristic vector of some STE-realizable Boolean function, and <C>false</C> otherwise.
 Note, that this function is implemented only for characteristic vectors of length not bigger than 7.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,0,0,1]);
 < Boolean function of 2 variables >
 gap> c:=CharacteristicVectorOfFunction(f);
 [ 2, 2, 2 ]
 gap> IsCharacteristicVectorOfSTE(c);
 true
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -259,8 +241,7 @@ Note that this function also accepts the kernel of the Boolean function <C>Func<
 
 A vector <M>b \in \mathbb{Z}_2^n</M> is called an additive inverse to <M>a \in \mathbb{Z}_2^n</M> if <M>a \oplus b = 0</M>. <P/>
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(3,2,[0,1,0,1,0,1,1,0]);;
 gap> k:=KernelOfBooleanFunction(f);;
 gap> Display(k[1]);
@@ -270,8 +251,7 @@ gap> Display(k[1]);
  1 1 .
 gap> IsInverseInKernel(f);
 true
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -289,13 +269,11 @@ Let <M>f(x_1,\ldots,x_n)</M> be a Boolean function with reduced kernel <M>T(f)=\
 The function <C>IsKernelContainingPrecedingVectors</C> returns <C>false</C> for a given function <C>Func</C> if <M>Func</M> is not realizable by a single threshold element (see <Cite Key="GecheMulesa2017"/>).
 Note that this function also accepts the kernel of the Boolean function <C>Func</C> as an input.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> ##Continuation of the previous example
 gap> IsKernelContainingPrecedingVectors(f);
 false
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -325,14 +303,12 @@ if this function is not STE-realizable (see <Cite Key="GecheMulesa2017"/>). Note
 the reduced kernel of the Boolean function <C>Func</C> as an input.
 
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,1,1,0]);
 < Boolean function of 2 variables >
 gap> IsRKernelBiggerOfCombSum(f);
 false
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -346,8 +322,7 @@ The function returns a threshold element with integer weights and integer thresh
 If <C>Func</C> is not realizable by STE, it returns an empty list [].
 The realization of the function <C>BooleanFunctionBySTE</C> is based on algorithms, proposed in <Cite Key="Geche2010"/>.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(3,2,[1,1,0,0,1,0,0,0]);
 < Boolean function of 3 variables >
 gap> te:=BooleanFunctionBySTE(f);
@@ -369,8 +344,7 @@ gap> f:=LogicFunction(2,2,[0,1,1,0]);
 < Boolean function of 2 variables >
 gap> te:=BooleanFunctionBySTE(f);
 [  ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -396,8 +370,7 @@ For the partially defined Boolean function <C>Func</C> (presented as a string, w
 the function <C>PDBooleanFunctionBySTE</C> returns a threshold element if <C>Func</C> can be realized by STE and
 empty list otherwise.
 The realization of the function <C>PDBooleanFunctionBySTE</C> is based on the algorithm, proposed in <Cite Key="GecheRobotyshyn83"/>.
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:="1x001x0x";
 "1x001x0x"
 gap> te:=PDBooleanFunctionBySTE(f);
@@ -415,8 +388,7 @@ Boolean function of 3 variables.
 [ 1, 1, 0 ] || 0
 [ 1, 1, 1 ] || 0
 Sum of Products:[ 0, 4 ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 
@@ -440,8 +412,7 @@ while training the threshold element), the Boolean function <C>Func</C> and the 
 the maximal number of iterations, the function <C>ThresholdElementTraining</C> returns a threshold element, realizing <C>Func</C>
 (if such threshold element exists).
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,0,0,1]);
 < Boolean function of 2 variables >
 gap> te1:=RandomThresholdElement(2,-2,2);
@@ -460,8 +431,7 @@ Boolean function of 2 variables.
 [ 0, 1 ] || 0
 [ 1, 0 ] || 0
 [ 1, 1 ] || 1
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -475,8 +445,7 @@ and the positive integer <C>Max_Iter</C> - the maximal number of iterations,
 the function <C>ThresholdElementTraining</C> returns a threshold element, realizing <C>Func</C>
 (if such threshold element exists) via batch training.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,0,0,1]);
 < Boolean function of 2 variables >
 gap> te1:=RandomThresholdElement(2,-2,2);
@@ -495,8 +464,7 @@ Boolean function of 2 variables.
 [ 0, 1 ] || 0
 [ 1, 0 ] || 0
 [ 1, 1 ] || 1
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -517,8 +485,7 @@ For the Boolean function <C>Func</C>, which is a monotone disjunction, <C>Winnow
 realizing <C>Func</C> or [] if <C>Func</C> is not trainable by <C>WinnowAlgorithm</C>. The positive ingetger <C>Step</C> which is not equal to 1 defines the value on which we change parameters
 while running the algorithm and the positive integer <C>Max_Iter</C> defines the maximal number of iterations.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> x:=Indeterminate(GF(2),"x");;
 gap> y:=Indeterminate(GF(2),"y");;
 gap> pol:=x*y+x+y;;
@@ -538,8 +505,7 @@ Boolean function of 2 variables.
 [ 0, 1 ] || 1
 [ 1, 0 ] || 1
 [ 1, 1 ] || 1
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -569,8 +535,7 @@ The positive integer <C>Step</C> which is not equal to 1
 defines the value on which we change parameters while running the algorithm.
 
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> ##Conjunction can not be trained by Winnow algorithm.
 gap> x:=Indeterminate(GF(2),"x");;
 gap> y:=Indeterminate(GF(2),"y");;
@@ -591,8 +556,7 @@ Boolean function of 2 variables.
 [ 1, 0 ] || 0
 [ 1, 1 ] || 1
 Sum of Products:[ 3 ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 
@@ -613,8 +577,7 @@ For the Boolean function <C>Func</C> the function <C>STESynthesis</C> returns a 
 <C>Func</C> is STE-realizable or an empty list otherwise.<P/>
 
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=x*y+x+y;;
 gap> x:=Indeterminate(GF(2),"x");;
 gap> y:=Indeterminate(GF(2),"y");;
@@ -631,8 +594,7 @@ Boolean function of 2 variables.
 [ 1, 0 ] || 1
 [ 1, 1 ] || 1
 Product of Sums:[ 0 ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 

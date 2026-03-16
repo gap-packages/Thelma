@@ -36,8 +36,7 @@ integers <C>Output</C> - the truth vector of the given <C>Dimension</C>-valued l
 object, representing the corresponding logic function. <P/>
 Note that <C>Dimension</C> can be also a list of <C>NumVars</C> positive integer numbers if we deal with discrete logic functions.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,0,1,1]);
 < Boolean function of 2 variables >
 gap> Display(f);
@@ -59,8 +58,7 @@ gap> Display(f);
 [ 2, 0 ] || 2
 [ 2, 1 ] || 0
 [ 2, 2 ] || 1
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -71,13 +69,11 @@ gap> Display(f);
 For the object <C>Obj</C> the function <C>IsLogicFunction</C> returns <C>true</C> if
 <C>Obj</C> is a logic function (see <Ref Func="LogicFunction" />), and <C>false</C> otherwise.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,1,1,1]);;
 gap> IsLogicFunction(f);
 true
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -89,8 +85,7 @@ For the polynomial <C>Pol</C> over <M>GF(2)</M> and the number of variables <C>N
 the function <C>PolynomialToBooleanFunction</C> returns a Boolean logic function which is
 realized by <C>Pol</C>.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> x:=Indeterminate(GF(2),"x");;
 gap> y:=Indeterminate(GF(2),"y");;
 gap> pol:=x+y;;
@@ -102,8 +97,7 @@ Boolean function of 2 variables.
 [ 0, 1 ] || 1
 [ 1, 0 ] || 1
 [ 1, 1 ] || 0
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -126,8 +120,7 @@ For the Boolean function <C>Func</C> and the positive integer <C>Var</C> (which 
  the function <C>IsUnateBooleanFunction</C>  returns <C>true</C> if <C>Func</C> is unate (either positive or negative)
  in this variable and <C>false</C> otherwise.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);
 < Boolean function of 3 variables >
 gap> Display(f);
@@ -146,8 +139,7 @@ gap> IsUnateInVariable(f,2);
 false
 gap> IsUnateInVariable(f,3);
 false
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 
@@ -166,16 +158,14 @@ functions, that can not be realized by STE <Cite Key="Avedillo1999"/>. <P/>
 For the Boolean function <C>Func</C> the function <C>IsUnateBooleanFunction</C>  returns <C>true</C> if <C>Func</C> is unate and <C>false</C> otherwise.
 
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,1,1,1]);;
 gap> IsUnateBooleanFunction(f);
 true
 gap> f:=LogicFunction(2,2,[0,1,1,0]);;
 gap> IsUnateBooleanFunction(f);
 false
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -190,8 +180,7 @@ the function <C>InfluenceOfVariable</C>  returns a positive integer -
 the weighted influence of the variable <C>Var</C> (to obtain integer values we multiply the influence
 of the variable by <M>2^n</M>, where <M>n</M> is the number of variables of <C>Func</C>).
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(3,2,[0,0,0,0,0,1,1,0]);
 < Boolean function of 3 variables >
 gap> Display(f);
@@ -206,8 +195,7 @@ Boolean function of 3 variables.
 [ 1, 1, 1 ] || 0
 gap> InfluenceOfVariable(f,2);
 2
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -230,8 +218,7 @@ self-dual space of <M>n+1</M> variables is much stronger condition.<P/>
 For the Boolean function <C>Func</C> the function <C>SelfDualExtensionOfBooleanFunction</C>  returns
 the self-dual extension of <C>Func</C>.<P/>
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,0,0,1]);
 < Boolean function of 2 variables >
 gap> Display(f);
@@ -252,8 +239,7 @@ Boolean function of 3 variables.
 [ 1, 0, 1 ] || 1
 [ 1, 1, 0 ] || 1
 [ 1, 1, 1 ] || 1
-]]>
-</Example>
+]]></Example>
 
 </Description> </ManSection>
 
@@ -286,8 +272,7 @@ For the Boolean function <C>Func</C>, a positive integer <C>Var</C> (the number 
 (<C>true</C> for disjunction and <C>false</C> for conjunction) the function
 <C>SplitBooleanFunction</C>  returns a list with two entries: the resulting Boolean logic functions.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(2,2,[0,1,1,0]);;
 gap> Display(f);
 Boolean function of 2 variables.
@@ -305,8 +290,7 @@ gap> Print(out[1]);
 [2, 2,[ 0, 1, 0, 0 ]]
 gap> Print(out[2]);
 [2, 2,[ 0, 0, 1, 0 ]]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 
@@ -336,13 +320,11 @@ where <M>|f^{-1}(i)|</M> is the cardinality of the set <M>f^{-1}(i)</M> with <M>
 For the Boolean function <C>Func</C> the function <C>KernelOfBooleanFunction</C> returns a list in which
  the first element of the output list represents the kernel, and the second element equals either <M>1</M> or <M>0</M>.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> f:=LogicFunction(3,2,[0,1,1,0,1,0,0,0]);;
 gap> k:=KernelOfBooleanFunction(f);
 [ [ [ 0, 0, 1 ], [ 0, 1, 0 ], [ 1, 0, 0 ] ], 1 ]
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 
 <ManSection>
@@ -365,8 +347,7 @@ T(f)=\big\{ \;K(f)_i \;\mid\; i=1,2,\ldots,m  \;\big\}.
 For the <M>m \times n</M> matrix <C>Ker</C>, which represents the kernel of some Boolean function <M>f</M>,
 the function <C>ReducedKernelOfBooleanFunction</C> returns the reduced kernel <M>T(f)</M> of <M>f</M>.
 
-<Example>
-<![CDATA[
+<Example><![CDATA[
 gap> ## Continuation of Example 2.2.4
 gap> rk:=ReducedKernelOfBooleanFunction(k[1]);;
 gap> j:=1;;
@@ -385,8 +366,7 @@ gap> for i in rk do Print(j,".\n"); Display(i); Print("\n"); j:=j+1; od;
  1 . 1
  1 1 .
  . . .
-]]>
-</Example>
+]]></Example>
 </Description> </ManSection>
 </Section>
 <!-- ############################################################ -->
