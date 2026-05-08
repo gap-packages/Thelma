@@ -19,7 +19,7 @@ AutoDoc(rec(
             "mvthr_el.xml",
         ],
     ),
-    gapdoc := rec( main := "thelma.xml" ),
+    gapdoc := true,
 ));
 
 
